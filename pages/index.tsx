@@ -2,7 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import mZAR from "../images/mZAR-coin.png";
-import Creative from "../images/mesh-creative.png"
+import Creative from "../images/mesh-creative.png";
+import mZARLogo from "../images/mzar-logo.png";
+import meshLogo from "../images/mesh-logo.png"
 
 const Home: NextPage = () => {
   return (
@@ -22,30 +24,63 @@ const Home: NextPage = () => {
 
       {/* MOBILE */}
 
-      <nav className="sticky bg-transparent">
-        <div>flex bg-transparent w-[20px]</div>
+      <nav className="sticky flex flex-wrap justify-between px-8 py-4 bg-transparent">
+        <div className="">
+          <Image src={mZARLogo} alt={"Mesh mZAR token icon"} priority></Image>
+        </div>
+        <div className="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          
+        </div>
       </nav>
+
       <main>
         <div className="grid h-screen place-content-center">
           <div className="absolute inset-0 w-screen h-screen overflow-hidden ">
             <div className="absolute top-0 h-screen mesh-gradient -left-36 -z-10 w-overflow"></div>
 
-            <div className="absolute -rotate-180 -translate-y-64 top-full translate-x-1/3">
+            {/* <div className="absolute -rotate-180 translate-x-1.5 -translate-y-96 scale-175 top-full">
               <Image
                 src={Creative}
                 alt={"Mesh mZAR token icon"}
+                
+                priority
+                // width={100}
+                // height={100}
+              ></Image>
+            </div> */}
+
+            <div className="absolute scale-150 -rotate-180 -translate-y-1/2 translate-x-1/4 top-full">
+              <Image
+                src={Creative}
+                alt={"Mesh mZAR token icon"}
+                className={"rotate-12 scale-150"}
                 priority
                 // width={100}
                 // height={100}
               ></Image>
             </div>
+
           </div>
 
-          <div className="grid gap-10 px-10 tracking-wide">
+          <div className="z-40 grid gap-12 px-10 tracking-wide">
             <div>
               <h1
                 className={
-                  " text-center font-poppins text-3xl font-bold text-white"
+                  " text-center font-poppins text-4xl font-bold text-white"
                 }
               >
                 <a href="https://mesh.trade">Meet mZAR.</a>
@@ -59,23 +94,32 @@ const Home: NextPage = () => {
                 src={mZAR}
                 alt={"Mesh mZAR token icon"}
                 priority
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               ></Image>
             </div>
             <div>
-              <p className="font-normal text-center text-gray-300 text-l">
+              <p className="z-50 font-normal text-center text-gray-300/70 text-l">
                 Individuals, institutions, wallets, exchanges, crypto hodlrs,
                 and market makers can now access the speed, transparency, and
                 trust of mZAR. Everyone is invited.
               </p>
             </div>
-            <div className="grid place-content-center">
-              <button className="grid px-10 text-white bg-[#30B0B0] rounded-md shadow-lg h-11 place-content-center font-poppins">
+            <div className="z-50 grid place-content-center">
+              <button className="grid h-11 place-content-center rounded-md bg-[#30B0B0] px-10 font-poppins text-white shadow-xl">
                 Buy mZAR NOW
               </button>
             </div>
           </div>
+        </div>
+        <div className="grid bg-red-400 place-content-center"> 
+        <p className="text-center font-poppins text-[#171433]">Trusted by:</p>
+        <Image
+                src={meshLogo}
+                alt={"Mesh mZAR token icon"}
+                priority
+       className="border-b-2"
+              ></Image>  
         </div>
       </main>
 
