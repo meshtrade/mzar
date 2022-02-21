@@ -49,8 +49,8 @@ const Home: NextPage = () => {
 
       <main>
         <div className="grid h-screen place-content-center">
-          <div className="absolute inset-0 w-screen h-screen overflow-hidden ">
-            <div className="absolute top-0 h-screen mesh-gradient -left-36 -z-10 w-overflow"></div>
+          <div className="absolute inset-0 w-screen h-screen overflow-hidden -z-10">
+            <div className="absolute top-0 h-screen mesh-gradient -left-36 w-overflow"></div>
 
             {/* <div className="absolute -rotate-180 translate-x-1.5 -translate-y-96 scale-175 top-full">
               <Image
@@ -63,20 +63,20 @@ const Home: NextPage = () => {
               ></Image>
             </div> */}
 
-            <div className="absolute scale-150 -rotate-180 -translate-y-1/2 translate-x-1/4 top-full">
+            <div className="absolute scale-150 -rotate-180 translate-x-1/2 -translate-y-1/2 top-full">
               <Image
                 src={Creative}
                 alt={"Mesh mZAR token icon"}
-                className={"rotate-12 scale-150"}
+                className={"rotate-12 "}
                 priority
-                // width={100}
+                // width={400}
                 // height={100}
               ></Image>
             </div>
 
           </div>
 
-          <div className="z-40 grid gap-12 px-10 tracking-wide">
+          <div className="grid gap-12 px-10 tracking-wide ">
             <div>
               <h1
                 className={
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
                 trust of mZAR. Everyone is invited.
               </p>
             </div>
-            <div className="z-50 grid place-content-center">
+            <div className="grid place-content-center">
               <button className="grid h-11 place-content-center rounded-md bg-[#30B0B0] px-10 font-poppins text-white shadow-xl">
                 Buy mZAR NOW
               </button>
