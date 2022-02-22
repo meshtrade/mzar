@@ -2,26 +2,57 @@ import React from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import circle from "../images/full-circle.png";
-//import { Fragment } from "react";
+import { Fragment } from "react";
 
 export const Metadata = () => {
   return (
     <div className={"h-auto py-10 "}>
-      <h1
-        className={"flex justify-center py-2 text-4xl font-bold text-[#DE1B55]"}
-      >
-        Asset Metadata
-      </h1>
+      <div className={"flex justify-center"}>
+        <div className={" flex justify-center py-2 text-4xl  text-[#DE1B55]"}>
+          Asset
+        </div>
+        <div
+          className={
+            "flex justify-center py-2 px-2 text-4xl font-bold text-[#DE1B55]"
+          }
+        >
+          Metadata
+        </div>
+      </div>
 
-      <div className={"h-auto py-6"}>
+      <div className={"h-auto py-6 "}>
         <Tab.Group>
-          <Tab.List>
-            <Tab className={"px-6"}>ORGANIZATION METADATA</Tab>
-            <Tab>CURRENCY</Tab>
+          <Tab.List className={"mx-8 border-b border-[#DE1B55]  py-2"}>
+            <Tab as={Fragment}>
+              {({ selected }) => (
+                <button
+                  className={
+                    selected
+                      ? "  text-[#DE1B55] underline underline-offset-[13px]"
+                      : " bg-white px-3 text-[#55517B]"
+                  }
+                >
+                  ORGANIZATION METADATA
+                </button>
+              )}
+            </Tab>
+            <Tab as={Fragment}>
+              {({ selected }) => (
+                <button
+                  className={
+                    selected
+                      ? "   text-[#DE1B55] underline underline-offset-[13px]"
+                      : " bg-white px-3 text-[#55517B]"
+                  }
+                >
+                  CURRENCY
+                </button>
+              )}
+            </Tab>
           </Tab.List>
           <Tab.Panels>
-            <Tab.Panel className={"h-auto px-10"}>
-              <div className={"flex items-center justify-center py-4"}>
+            <Tab.Panel className={"h-auto px-10 text-lg"}>
+              <div className={"flex items-center justify-center py-8"}>
                 <a href="/">
                   <Image
                     src={circle}
@@ -38,7 +69,7 @@ export const Metadata = () => {
               >
                 Organisation Name
               </p>
-              <p className={"flex justify-center py-6"}>
+              <p className={"flex justify-center  py-2 text-[#55517B]"}>
                 {" "}
                 Mesh Trade South Africa (Pty) Ltd{" "}
               </p>
@@ -49,7 +80,11 @@ export const Metadata = () => {
               >
                 Website
               </p>
-              <p className={"flex justify-center text-center "}>
+              <p
+                className={
+                  "flex justify-center py-2 text-center text-[#55517B]"
+                }
+              >
                 https://mzar.mesh.trade
               </p>
 
@@ -60,7 +95,11 @@ export const Metadata = () => {
               >
                 Description
               </p>
-              <p className={"flex justify-center  text-center"}>
+              <p
+                className={
+                  "flex justify-center  py-2 text-center text-[#55517B]"
+                }
+              >
                 Mesh is a multi-sided, cross- asset platform that provides
                 universal, direct access for all participants to a trusted
                 global capital marketplace. Mesh makes it possible to Create,
@@ -74,7 +113,10 @@ export const Metadata = () => {
               >
                 Twitter Account
               </p>
-              <p className={"flex justify-center  "}> @mesh_trade</p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>
+                {" "}
+                @mesh_trade
+              </p>
               <p
                 className={
                   "flex justify-center  text-xl font-bold text-[#DE1B55]"
@@ -82,10 +124,13 @@ export const Metadata = () => {
               >
                 Official Email
               </p>
-              <p className={"flex justify-center  "}> hello@mesh.trade</p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>
+                {" "}
+                hello@mesh.trade
+              </p>
             </Tab.Panel>
-            <Tab.Panel className={"h-auto px-10"}>
-              <div className={"flex items-center justify-center py-4"}>
+            <Tab.Panel className={"h-auto px-10 text-lg"}>
+              <div className={"flex items-center justify-center py-8"}>
                 <a href="/">
                   <Image
                     src={circle}
@@ -102,7 +147,10 @@ export const Metadata = () => {
               >
                 Asset Code
               </p>
-              <p className={"flex justify-center  "}> mZAR </p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>
+                {" "}
+                mZAR{" "}
+              </p>
               <p
                 className={
                   "flex justify-center  text-xl font-bold text-[#DE1B55]"
@@ -110,7 +158,11 @@ export const Metadata = () => {
               >
                 Issuer Address
               </p>
-              <p className={"flex justify-center text-center "}>
+              <p
+                className={
+                  "flex justify-center py-2 text-center text-[#55517B]"
+                }
+              >
                 GCBNWTCCMC32UHZ5OC C2PNMFDGXRVPA7MFFBF FTCVW77SX5PMRB7Q4BY
               </p>
 
@@ -121,7 +173,9 @@ export const Metadata = () => {
               >
                 Friendly Name{" "}
               </p>
-              <p className={"flex justify-center  "}>ZAR Mesh </p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>
+                ZAR Mesh{" "}
+              </p>
               <p
                 className={
                   "flex justify-center  text-xl font-bold text-[#DE1B55]"
@@ -129,7 +183,11 @@ export const Metadata = () => {
               >
                 Description
               </p>
-              <p className={"flex justify-center  text-center"}>
+              <p
+                className={
+                  "flex justify-center  py-2 text-center text-[#55517B]"
+                }
+              >
                 mZAR is a fully collateralized South African ZAR stablecoin,
                 based on the open fiat stablecoin framework of Mesh. mZAR is
                 fully redeemable for ZAR held in an account managed by Mesh.
@@ -141,7 +199,10 @@ export const Metadata = () => {
               >
                 Anchored Asset
               </p>
-              <p className={"flex justify-center  "}> true </p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>
+                {" "}
+                true{" "}
+              </p>
               <p
                 className={
                   "flex justify-center  text-xl font-bold text-[#DE1B55]"
@@ -149,7 +210,7 @@ export const Metadata = () => {
               >
                 Anchored Asset Type{" "}
               </p>
-              <p className={"flex justify-center  "}> fiat</p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}> fiat</p>
               <p
                 className={
                   "flex justify-center  text-xl font-bold text-[#DE1B55]"
@@ -157,7 +218,7 @@ export const Metadata = () => {
               >
                 Anchor Asset{" "}
               </p>
-              <p className={"flex justify-center  "}>ZAR </p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>ZAR </p>
               <p
                 className={
                   "flex justify-center  text-xl font-bold text-[#DE1B55]"
@@ -165,7 +226,11 @@ export const Metadata = () => {
               >
                 Redemption Instructions
               </p>
-              <p className={"flex justify-center text-center "}>
+              <p
+                className={
+                  "flex justify-center py-2 text-center text-[#55517B]"
+                }
+              >
                 {" "}
                 Redeemable through a Mesh account at mesh.trade
               </p>
@@ -176,7 +241,10 @@ export const Metadata = () => {
               >
                 Attestation_of_reserve
               </p>
-              <p className={"flex justify-center  "}> mzar.mesh.trade </p>
+              <p className={"flex justify-center py-2 text-[#55517B]"}>
+                {" "}
+                mzar.mesh.trade{" "}
+              </p>
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
