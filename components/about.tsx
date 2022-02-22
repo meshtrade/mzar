@@ -5,19 +5,21 @@ import design from "../images/left-design.png";
 
 export const About = () => {
   return (
-    <div>
-      <div className={"absolute left-0 w-3/4 py-8"}>
+    <div className={"grid lg:grid-cols-2"}>
+      <div className={"left-0  py-8"}>
         <a href="/">
           <Image src={design} alt="left-design" />
         </a>
       </div>
-      <div className={" h-auto px-8 pt-80"}>
+      <div className={"h-auto px-8 lg:py-32"}>
         <h1
-          className={"flex justify-center  text-5xl font-bold text-[#DE1B55]"}
+          className={
+            "flex justify-center text-5xl  font-bold text-[#DE1B55] lg:justify-start"
+          }
         >
           About
         </h1>
-        <div className={"flex justify-center py-6"}>
+        <div className={"flex justify-center py-6 lg:justify-start"}>
           <div className={" flex justify-center py-2 text-3xl  text-[#DE1B55]"}>
             What is
           </div>
@@ -43,7 +45,7 @@ export const About = () => {
             1 mZAR equals 1 ZAR. At all times
           </p>
         </p>
-        <div className={"flex items-center justify-center py-4"}>
+        <div className={"flex items-center justify-center pt-8"}>
           <a href="/">
             <Image
               src={circle}
