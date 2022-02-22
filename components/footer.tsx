@@ -4,7 +4,7 @@ import logo from "../images/mesh-logo.png";
 
 export const Footer = () => {
   return (
-    <div className={"mt-96 border-t-2 border-black py-10"}>
+    <div className={"h-auto border-t-2 border-black py-10"}>
       <div
         className={
           "flex items-center justify-center bg-white font-sans text-lg"
