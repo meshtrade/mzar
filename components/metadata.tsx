@@ -4,45 +4,26 @@ import Image from "next/image";
 import circle from "../images/full-circle.png";
 import right from "../images/right-side.png";
 import { Fragment } from "react";
+import mZAR from "../images/mZAR-coin.png";
 
 export const Metadata = () => {
   return (
-    <div className={"grid h-auto  py-10 lg:grid-cols-4"}>
-      <div className={"flex justify-center"}>
-        {/* <div className={" flex justify-center py-2 text-4xl  text-[#DE1B55]"}>
-          Asset
-        </div>
-        <div
-          className={
-            "flex justify-center py-2 px-2 text-4xl font-bold text-[#DE1B55]"
-          }
-        >
-          Metadata
-        </div> */}
-      </div>
-
-      <div className={"h-auto py-6 lg:col-span-2"}>
-        <div className={"flex justify-center  lg:py-8"}>
-          <div className={" flex justify-center py-2 text-4xl  text-[#DE1B55]"}>
-            Asset
-          </div>
-          <div
-            className={
-              "flex justify-center py-2 px-2 text-4xl font-bold text-[#DE1B55]"
-            }
-          >
-            Metadata
+    <div className={"grid  lg:grid-cols-4 px-4 mb-20"}>
+      <div className={"lg:col-span-2"}>
+        <div className={"lg:py-8"}>
+          <div className={" font-poppins text-center pb-8 text-3xl  text-[#DE1B55]"}>
+           <h2>Asset<strong className="pl-2">Metadata</strong></h2> 
           </div>
         </div>
         <Tab.Group>
-          <Tab.List className={"mx-6 border-b border-[#DE1B55]  py-2"}>
+          <Tab.List className={"mx-6 border-b border-[#DE1B55] flex flex-wrap justify-between  py-2 "}>
             <Tab as={Fragment}>
               {({ selected }) => (
                 <button
                   className={
                     selected
-                      ? "  text-[#DE1B55] underline underline-offset-[13px]"
-                      : " bg-white px-3 text-[#55517B]"
+                      ? " text-[14px]  font-poppins font-[500] tracking-wide text-[#DE1B55] underline underline-offset-[11px] decoration-2"
+                      : " text-[#BEBDCD] text-opacity-50 font-[500] font-poppins text-[14px] tracking-wide ;"
                   }
                 >
                   ORGANIZATION METADATA
@@ -54,8 +35,8 @@ export const Metadata = () => {
                 <button
                   className={
                     selected
-                      ? "   text-[#DE1B55] underline underline-offset-[13px]"
-                      : " bg-white px-3 text-[#55517B]"
+                    ? " text-[14px]  font-poppins font-[500] tracking-wide text-[#DE1B55] underline underline-offset-[11px] decoration-2"
+                    : " text-[#BEBDCD] text-opacity-50 font-[500] font-poppins text-[14px] tracking-wide ;"
                   }
                 >
                   CURRENCY
@@ -64,50 +45,49 @@ export const Metadata = () => {
             </Tab>
           </Tab.List>
           <Tab.Panels>
-            <Tab.Panel className={"h-auto text-lg"}>
+            <Tab.Panel>
               <div className={"flex items-center justify-center py-8"}>
-                <a href="/">
-                  <Image
-                    src={circle}
-                    alt="full-circle"
-                    width={"50px"}
-                    height={"50px"}
-                  />
-                </a>
+                <Image
+                  src={mZAR}
+                  alt={"Mesh mZAR token icon"}
+                  priority
+                  width={70}
+                  height={70}
+                ></Image>
               </div>
               <div
                 className={
-                  "grid justify-items-center md:grid-cols-1 lg:grid-cols-2 lg:justify-items-start "
+                  "grid gap-2 justify-items-center md:grid-cols-1 lg:grid-cols-2 lg:justify-items-start tracking-wide"
                 }
               >
-                <p className={"text-xl font-bold text-[#DE1B55]"}>
+                <h2 className={"text-xl  font-bold text-[#DE1B55]"}>
                   Organisation Name
-                </p>
-                <p className={"text-[#55517B] "}>
+                </h2>
+                <p className={"text-[#55517B] font-roboto font-[300]"}>
                   {" "}
                   Mesh Trade South Africa (Pty) Ltd{" "}
                 </p>
 
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    "text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Website
                 </p>
-                <p className={"flex justify-center text-center text-[#55517B]"}>
+                <p className={"text-[#55517B] font-roboto font-[300]"}>
                   https://mzar.mesh.trade
                 </p>
 
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Description
                 </p>
-                <p className={" text-[#55517B]"}>
-                  Mesh is a multi-sided, cross- asset platform that provides
+                <p className={" text-[#55517B] font-roboto font-[300] text-center"}>
+                  Mesh is a multi-sided, cross-asset platform that provides
                   universal, direct access for all participants to a trusted
                   global capital marketplace. Mesh makes it possible to Create,
                   Issue, Trade, and Own tokenized digital assets over their full
@@ -115,128 +95,125 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    "text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Twitter Account
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}>
+                <p className={"text-[#55517B] font-roboto font-[300]"}>
                   {" "}
                   @mesh_trade
                 </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Official Email
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}>
-                  {" "}
-                  hello@mesh.trade
-                </p>
+                <a href="mailto:hello@mesh.trade" className="text-[#55517B] font-roboto font-[300] cursor-pointer hover:text-[#30B0B0]">hello@mesh.trade</a>
+  
               </div>
             </Tab.Panel>
-            <Tab.Panel className={"h-auto px-10 text-lg"}>
-              <div className={"flex items-center justify-center py-8"}>
-                <a href="/">
-                  <Image
-                    src={circle}
-                    alt="full-circle"
-                    width={"50px"}
-                    height={"50px"}
-                  />
-                </a>
+            <Tab.Panel className={""}>
+            <div className={"flex items-center justify-center  py-8"}>
+                <Image
+                  src={mZAR}
+                  alt={"Mesh mZAR token icon"}
+                  priority
+                  width={70}
+                  height={70}
+                ></Image>
               </div>
               <div
                 className={
-                  "grid justify-items-center md:grid-cols-1 lg:grid-cols-2 lg:justify-items-start "
+                  "grid gap-2 justify-items-center md:grid-cols-1 lg:grid-cols-2 lg:justify-items-start tracking-wide px-4"
                 }
               >
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Asset Code
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}> mZAR </p>
+                <p className={"text-[#55517B] font-roboto font-[300]"}> mZAR </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    "text-center text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Issuer Address
                 </p>
-                <p className={"flex justify-center text-center text-[#55517B]"}>
+                <p className={"text-[#55517B] text-center text-lg font-roboto font-[300]"}>
                   GCBNWTCCMC32UHZ5OC C2PNMFDGXRVPA7MFFBF FTCVW77SX5PMRB7Q4BY
                 </p>
 
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
-                  Friendly Name{" "}
+                  Friendly Name
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}>
-                  ZAR Mesh{" "}
+                <p className={"text-[#55517B] text-center text-lg font-roboto font-[300]"}>
+                  ZAR Mesh
                 </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Description
                 </p>
-                <p className={" text-[#55517B]"}>
+                <p className={" text-[#55517B] text-center text-lg font-roboto font-[300]"}>
                   mZAR is a fully collateralized South African ZAR stablecoin,
                   based on the open fiat stablecoin framework of Mesh. mZAR is
                   fully redeemable for ZAR held in an account managed by Mesh.
                 </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Anchored Asset
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}> true </p>
+                <p className={"text-[#55517B] text-center text-lg font-roboto font-[300]"}> true </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
-                  Anchored Asset Type{" "}
+                  Anchored Asset Type
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}> fiat</p>
+                <p className={"text-[#55517B] text-center text-lg font-roboto font-[300]"}> fiat</p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    "text-xl font-bold text-[#DE1B55]"
                   }
                 >
-                  Anchor Asset{" "}
+                  Anchor Asset
                 </p>
-                <p className={"flex justify-center text-[#55517B]"}>ZAR </p>
+                <p className={"text-[#55517B] text-center text-lg font-roboto font-[300]"}>ZAR </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    " text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Redemption Instructions
                 </p>
-                <p className={"text-[#55517B]"}>
-                  {" "}
-                  Redeemable through a Mesh account at mesh.trade
+                <p className={"text-[#55517B] text-center text-lg font-roboto font-[300]"}>
+                  Redeemable through a Mesh account at <a className="tracking-wide text-[#30B0B0] underline underline-offset-2 decoration-2" href="https://www.mesh.trade/"> mesh.trade</a>
                 </p>
                 <p
                   className={
-                    "flex justify-center  text-xl font-bold text-[#DE1B55]"
+                    "text-xl font-bold text-[#DE1B55]"
                   }
                 >
                   Attestation_of_reserve
                 </p>
-                <p className={"text-[#55517B]"}> mzar.mesh.trade </p>
+                <a className="tracking-wide text-[#30B0B0] text-lg font-[300] underline underline-offset-2 decoration-2" href="#"> mzar.mesh.trade</a>
+
               </div>
             </Tab.Panel>
           </Tab.Panels>
