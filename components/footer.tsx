@@ -5,54 +5,46 @@ import logo from "../images/mesh-logo.png";
 export const Footer = () => {
   return (
     <div>
-      <div className={"mx-10  border-t-2 border-[#E4E4E4] py-4"}>
-        <div
-          className={
-            "flex items-center justify-center bg-white py-2 font-sans text-base text-[#171433]"
-          }
-        >
-          <p>Supported Wallets:</p>
-        </div>
+      <div>
+        <div className={"mx-8  border-t-[1px] border-[#E4E4E4] pt-4"}>
+          <div
+            className={
+              "flex items-center justify-center bg-white font-sans text-base text-[#171433]"
+            }
+          >
+            <p>Supported Wallets:</p>
+          </div>
 
-        <div className={"flex items-center justify-center"}>
-          <a href="/">
-            <Image
-              placeholder={"blur"}
-              src={logo}
-              alt="logo"
-              width={100}
-              height={40}
-            />
-          </a>
+          <div className={"flex items-center justify-center pb-4"}>
+            <a href="/">
+              <Image src={logo} alt="logo" />
+            </a>
+          </div>
         </div>
       </div>
       {/* Desktop version footer */}
-      <div className={"mx-10  border-t-2 border-[#E4E4E4] py-4"}>
+      <div
+        className={"mx-10  border-t-[1px] border-b-[1px] border-[#E4E4E4] py-4"}
+      >
         <div className={"bold  text-sm font-bold "}>
-          {/* <div>Platform as a Service Agreement</div>
-          <div>Authorised User Service Agreement</div>
-          <div>Website Privacy Policy</div>
-          <div>Support Services Policy</div>
-          <div>Acceptable Use Policy</div>
-          <div>Data Protection Policy</div> */}
           <ul className={"flex flex-wrap justify-between"}>
             <li className={"hover:text-[#DE1B55]"}>
-              <a href="">Platform as a Service Agreement</a>
+              <a href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/PaaS/v1.0.0/MESH_PaaS_30July2021_1.4%20FINAL.pdf" target="_blank">Platform as a Service Agreement</a>
             </li>
             <li className={"hover:text-[#DE1B55]"}>
-              <a href="">Authorised User Service Agreement</a>
+              <a href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Authorised-User-Service/v1.0.0/3.%20MESH_Authorised%20User%20Service%20Agreement.20210730.FINAL.pdf" target="_blank">Authorised User Service Agreement</a>
             </li>
             <li className={"hover:text-[#DE1B55]"}>
-              <a href="">Website Privacy Policy</a>
+              <a href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Website-Privacy-Policy/v1.0.0/7.%20MESH_Website%20Privacy%20Policy%20Rev%203.20210730.FINAL.pdf" target="_blank">Website Privacy Policy</a>
             </li>
             <li className={"hover:text-[#DE1B55]"}>
-              <a href="">Support Services Policy</a>
+              <a href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Support-Services/v1.0.0/4.%20MESH_Support%20Services%20Policy.20210730.FINAL.pdf" target="_blank">Support Services Policy</a>
             </li>
             <li className={"hover:text-[#DE1B55]"}>
-              <a href="">Acceptable Use Policy</a>
+              <a href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Acceptable-Use-Policy/v1.0.0/5.%20MESH_Acceptable%20Use%20Policy.20210730.FINAL%20(1).pdf" target="_blank">Acceptable Use Policy</a>
             </li>
             <li className={"hover:text-[#DE1B55]"}>
-              <a href="">Data Protection Policy</a>
+              <a href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Data-Protection-Policy/v1.0.0/6.%20MESH%20BV%20-%20Data%20Protection%20Policy.20200730.FINAL.pdf" target="_blank">Data Protection Policy</a>
             </li>
           </ul>
         </div>
