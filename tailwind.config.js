@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: "'Poppins', sans-serif;"
+        poppins: "'Poppins', sans-serif;",
+        roboto: "'Roboto', sans-serif; "
       },
       width: {
         'overflow' : '150%',
