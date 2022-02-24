@@ -1,9 +1,13 @@
-// const STELLAR_SERVER = process.env.NEXT_PUBLIC_STELLAR_SERVER;
-const DOMAIN = process.env.NEXT_PUBLIC_TOML_DOMAIN;
+import { Server, ServerApi, StellarTomlResolver } from "stellar-sdk";
 
-const StellarSdk = require("stellar-sdk");
+const STELLAR_SERVER = process.env.NEXT_PUBLIC_STELLAR_SERVER;
+const STELLAR_TOML_DOMAIN = process.env.NEXT_PUBLIC_STELLAR_TOML_DOMAIN;
+const STELLAR_ISSUANCE_ACCOUNT =
+  process.env.NEXT_PUBLIC_STELLAR_ISSUANCE_ACCOUNT;
 
-// const server = new StellarSdk.Server(STELLAR_SERVER);
+const server = new Server(
+  STELLAR_SERVER ?? "https://horizon-testnet.stellar.org"
+);
 
 export interface Currency {
   anchor_asset: string;
@@ -43,7 +47,25 @@ export interface StellarTOML {
 }
 
 export const Stellar = {
+  getAccount: async (): Promise<ServerApi.AccountRecord> => {
+    return await server
+      .accounts()
+      .accountId(STELLAR_ISSUANCE_ACCOUNT ?? "")
+      .call();
+  },
+
   resolveTOML: async (): Promise<StellarTOML> => {
-    return await StellarSdk.StellarTomlResolver.resolve(DOMAIN);
+    if (STELLAR_ISSUANCE_ACCOUNT) {
+      const account = await Stellar.getAccount();
+      if (account.home_domain) {
+        return (await StellarTomlResolver.resolve(
+          account.home_domain
+        )) as StellarTOML;
+      }
+    }
+
+    return (await StellarTomlResolver.resolve(
+      STELLAR_TOML_DOMAIN ?? "mzar.mesh.trade"
+    )) as StellarTOML;
   },
 };

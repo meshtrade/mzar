@@ -221,6 +221,13 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+"@types/stellar-sdk@^0.15.1":
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/@types/stellar-sdk/-/stellar-sdk-0.15.1.tgz#615506df0a432e8ccacc78f67e4de77d52927962"
+  integrity sha512-PE3Sj1alFUR32NjoR6C7DEusVaqokcQ8DOnq+c5/DoBDDzJrGXjui/3HLYgsQZIy7uabBJczGapuweWAGWPbmQ==
+  dependencies:
+    stellar-sdk "*"
+
 "@types/urijs@^1.19.6":
   version "1.19.19"
   resolved "https://registry.yarnpkg.com/@types/urijs/-/urijs-1.19.19.tgz#2789369799907fc11e2bc6e3a00f6478c2281b95"
@@ -2018,7 +2025,7 @@ stellar-base@^7.0.0:
   optionalDependencies:
     sodium-native "^2.3.0"
 
-stellar-sdk@^10.0.1:
+stellar-sdk@*, stellar-sdk@^10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/stellar-sdk/-/stellar-sdk-10.0.1.tgz#0a5ec3cd913c2a32897c1ef13abf41017b91634f"
   integrity sha512-NWvDAldw4GVFqWo1wGoR9lCyJ6xIcO2ab4YX8BQYp1Z45/Rogv3Kj3RERsso/9m+MR+d2OfTmAhIy0vruRGv/Q==
