@@ -56,7 +56,7 @@ export const About = () => {
         </div>
         <div
           className={
-            "visible flex items-center justify-center py-8 md:flex lg:hidden "
+            "visible flex animate-blob items-center justify-center py-8 md:flex lg:hidden "
           }
         >
           <Image
