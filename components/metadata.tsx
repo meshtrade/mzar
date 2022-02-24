@@ -9,7 +9,8 @@ import mZAR from "../images/mZAR-coin.png";
 export const Metadata = () => {
   return (
     <div className={"mb-20  grid px-4 lg:grid-cols-4"}>
-      <div className={"lg:col-span-2"}>
+      <div className={""}></div>
+      <div className={"lg:w-[600px]"}>
         <div className={"lg:py-8"}>
           <div
             className={
@@ -24,13 +25,13 @@ export const Metadata = () => {
         <Tab.Group>
           <Tab.List
             className={
-              "mx-6 flex flex-wrap justify-between border-b border-[#DE1B55]  py-2 "
+              "mx-6 flex  flex-wrap justify-between border-b  border-[#DE1B55] py-2 "
             }
           >
             <Tab
               className={({ selected }) =>
                 selected
-                  ? " font-poppins  text-[14px] font-[500] tracking-wide text-[#DE1B55] underline focus:outline-none decoration-2 underline-offset-[4px] md:underline-offset-[11px]"
+                  ? " font-poppins  text-[14px] font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[4px] focus:outline-none md:underline-offset-[11px]"
                   : " font-poppins text-[14px] font-[500] tracking-wide text-[#55517B] text-opacity-30 "
               }
             >
@@ -87,7 +88,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    " text-center font-roboto  text-[18px] font-[300] text-[#55517B]"
+                    "text-center font-roboto text-[18px]  font-[300] text-[#55517B] lg:text-left"
                   }
                 >
                   Mesh is a multi-sided, cross-asset platform that provides
@@ -140,15 +141,14 @@ export const Metadata = () => {
                     "font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  {" "}
-                  mZAR{" "}
+                  mZAR
                 </p>
                 <p className={"text-center text-xl font-bold text-[#DE1B55]"}>
                   Issuer Address
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
+                    "text-center font-roboto text-[18px] font-[300] text-[#55517B] lg:text-left"
                   }
                 >
                   GCBNWTCCMC32UHZ5OC C2PNMFDGXRVPA7MFFBF FTCVW77SX5PMRB7Q4BY
@@ -169,7 +169,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    " text-center font-roboto text-[18px] font-[300] text-[#55517B]"
+                    "text-center font-roboto text-[18px] font-[300] text-[#55517B] lg:text-left"
                   }
                 >
                   mZAR is a fully collateralized South African ZAR stablecoin,
@@ -184,8 +184,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  {" "}
-                  true{" "}
+                  true
                 </p>
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
                   Anchored Asset Type
@@ -195,7 +194,6 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  {" "}
                   fiat
                 </p>
                 <p className={"text-xl font-bold text-[#DE1B55]"}>
@@ -206,14 +204,14 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  ZAR{" "}
+                  ZAR
                 </p>
-                <p className={" text-xl font-bold text-[#DE1B55]"}>
+                <p className={"text-xl font-bold text-[#DE1B55]"}>
                   Redemption Instructions
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
+                    "text-center font-roboto text-[18px] font-[300] text-[#55517B] lg:text-left"
                   }
                 >
                   Redeemable through a Mesh account at{" "}
@@ -221,7 +219,6 @@ export const Metadata = () => {
                     className="tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
                     href="https://www.mesh.trade/"
                   >
-                    {" "}
                     mesh.trade
                   </a>
                 </p>
@@ -240,17 +237,9 @@ export const Metadata = () => {
           </Tab.Panels>
         </Tab.Group>
       </div>
-      <div className={""}>
-        {/* <div className={"absolute right-0"}>
-          <a href="/">
-            <Image
-              src={right}
-              alt="full-circle"
-              width={"400px"}
-              height={"600px"}
-            />
-          </a>
-        </div> */}
+
+      <div className={"absolute right-0 hidden xl:block"}>
+        <Image src={right} alt="full-circle" width={"400px"} height={"600px"} />
       </div>
     </div>
   );
