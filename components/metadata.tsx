@@ -8,24 +8,27 @@ import mZAR from "../images/mZAR-coin.png";
 
 export const Metadata = () => {
   return (
-    <div id="asset-metadata" className={"mb-20  grid px-4 lg:grid-cols-4"}>
+    <div
+      id="asset-metadata"
+      className={"mb-40  grid px-4 md:px-20 lg:grid-cols-3 2xl:grid-cols-3 lg:-mt-32 xl:-mt-52 2xl:-mt-96"}
+    >
       <div className={""}></div>
       <div className={"lg:w-[600px]"}>
-        <div className={"lg:py-8"}>
+        <div className={"md:py-10 lg:py-8"}>
           <div
             className={
-              " pb-8 text-center font-poppins text-3xl  text-[#DE1B55]"
+              " pb-8 lg:pb-0 text-center  font-poppins text-3xl  text-[#DE1B55]"
             }
           >
-            <h2>
-              Asset<strong className="pl-2">Metadata</strong>
+            <h2 className="font-[300]">
+              Asset<strong className="pl-2 font-bold">Metadata</strong>
             </h2>
           </div>
         </div>
         <Tab.Group>
           <Tab.List
             className={
-              "mx-6 flex  flex-wrap justify-between border-b  border-[#DE1B55] py-2 "
+              "mx-10 flex  flex-wrap justify-between border-b  border-[#DE1B55] py-2 2xl:mx-28 md:mx-40 sm:mx-40 "
             }
           >
             <Tab
@@ -49,7 +52,7 @@ export const Metadata = () => {
           </Tab.List>
           <Tab.Panels>
             <Tab.Panel>
-              <div className={"flex items-center justify-center py-8"}>
+              <div className={"flex items-center justify-center py-8  md:pt-12"}>
                 <Image
                   src={mZAR}
                   alt={"Mesh mZAR token icon"}
@@ -238,8 +241,8 @@ export const Metadata = () => {
         </Tab.Group>
       </div>
 
-      <div className={"absolute right-0 hidden xl:block"}>
-        <Image src={right} alt="full-circle" width={"400px"} height={"600px"} />
+      <div className={"absolute right-0 hidden w-80 xl:block xl:-mt-10"}>
+        <Image src={right} alt="full-circle" />
       </div>
     </div>
   );

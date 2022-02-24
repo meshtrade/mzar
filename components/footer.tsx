@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div>
       <div className="font-poppins">
-        <div className={"mx-8  border-t-[1px] border-[#E4E4E4] pt-4"}>
+        <div className={"mx-8  border-t-[1px] border-[#707070] pt-4"}>
           <div
             className={
               "flex items-center justify-center bg-white font-sans text-base text-[#171433]"
@@ -26,13 +26,13 @@ export const Footer = () => {
       {/* Desktop */}
       <div
         className={
-          " mx-8   border-t-[1px] border-b-[1px] border-[#E4E4E4] py-4 font-poppins "
+          " mx-8   border-t-[1px]  border-[#707070] py-4 xl:py-2 font-poppins "
         }
       >
-        <div className={"text-[12px] font-bold"}>
+        <div className={"text-[11px] font-bold"}>
           <ul
             className={
-              "flex-wrap justify-between text-center text-[#171433]  lg:flex"
+              "flex-wrap gap-10 text-[#171433] xl:pt-2  lg:flex"
             }
           >
             <li className={"hover:text-[#DE1B55]"}>
@@ -86,8 +86,8 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className={" "}>
-        <p className={" py-4 px-10 font-poppins text-xs text-[#171433]  "}>
+      <div >
+        <p className={" py-4 xl:py-2 px-10 xl:px-8 md:text-center lg:text-left font-poppins text-[11px] text-[#171433]  "}>
           Copyright 2021 Mesh,Inc. All rights reserved | MESH 87 00-844
           Netherlands Capital 100 000 PLN, NIP:5272870947{" "}
         </p>
