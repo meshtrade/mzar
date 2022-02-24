@@ -20,7 +20,7 @@ export const Metadata = () => {
               " pb-8 lg:pb-0 text-center  font-poppins text-4xl  text-[#DE1B55]"
             }
           >
-            <h2 className="font-[300]">
+            <h2 className="font-light">
               Asset<strong className="pl-2 font-bold">Metadata</strong>
             </h2>
           </div>
@@ -28,14 +28,14 @@ export const Metadata = () => {
         <Tab.Group>
           <Tab.List
             className={
-              "mx-10 flex  flex-wrap justify-between border-b   border-[#DE1B55] py-2 2xl:mx-28 md:mx-32 sm:mx-40 "
+              "mx-10 flex  flex-wrap justify-between border-b font-medium  border-[#DE1B55] py-2 2xl:mx-28 md:mx-32 sm:mx-40 "
             }
           >
             <Tab
               className={({ selected }) =>
                 selected
-                  ? " font-poppins  text-sm font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px] focus:outline-none "
-                  : " font-poppins text-sm font-[500] tracking-wide text-[#55517B] text-opacity-30 dark:text-opacity-40 dark:text-[#707070]"
+                  ? " font-poppins  text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px] focus:outline-none "
+                  : " font-poppins text-sm tracking-wide text-[#55517B] text-opacity-30 dark:text-opacity-40 dark:text-[#707070]"
               }
             >
               ORGANIZATION METADATA
@@ -43,8 +43,8 @@ export const Metadata = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? " font-poppins text-sm  font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px]"
-                  : " font-poppins text-sm font-[500] tracking-wide text-[#55517B] text-opacity-30 dark:text-opacity-40 dark:text-[#707070]"
+                  ? " font-poppins text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px]"
+                  : " font-poppins text-sm tracking-wide text-[#55517B] text-opacity-30 dark:text-opacity-40 dark:text-[#707070]"
               }
             >
               CURRENCY
@@ -71,7 +71,7 @@ export const Metadata = () => {
                 </h2>
                 <p
                   className={
-                    "font-roboto text-lg font-[400] text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   Mesh Trade South Africa (Pty) Ltd
@@ -80,7 +80,7 @@ export const Metadata = () => {
                 <p className={"text-lg font-bold text-[#DE1B55]"}>Website</p>
                 <p
                   className={
-                    "font-roboto text-lg font-[400] text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   https://mzar.mesh.trade
@@ -91,7 +91,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg  font-[400] text-[#55517B] lg:text-left dark:text-white"
+                    "text-center font-roboto text-lg  font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
                   Mesh is a multi-sided, cross-asset platform that provides
@@ -105,7 +105,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "font-roboto text-lg font-[400]  text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal  text-[#55517B] dark:text-white"
                   }
                 >
                   @mesh_trade
@@ -115,7 +115,7 @@ export const Metadata = () => {
                 </p>
                 <a
                   href="mailto:hello@mesh.trade"
-                  className="cursor-pointer font-roboto text-lg font-[400] text-[#55517B] hover:text-[#30B0B0] dark:text-white"
+                  className="cursor-pointer font-roboto text-lg font-normal text-[#55517B] hover:text-[#30B0B0] dark:text-white"
                 >
                   hello@mesh.trade
                 </a>
@@ -141,7 +141,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "font-roboto text-lg font-[400] text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   mZAR
@@ -151,7 +151,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-[400] text-[#55517B] lg:text-left dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
                   GCBNWTCCMC32UHZ5OC C2PNMFDGXRVPA7MFFBF FTCVW77SX5PMRB7Q4BY
@@ -162,7 +162,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-robototext-lg font-[400] text-[#55517B] dark:text-white"
+                    "text-center font-robototext-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   ZAR Mesh
@@ -172,7 +172,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-[400] text-[#55517B] lg:text-left dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
                   mZAR is a fully collateralized South African ZAR stablecoin,
@@ -184,7 +184,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-[400] text-[#55517B] dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   true
@@ -194,7 +194,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-[400] text-[#55517B] dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   fiat
@@ -204,7 +204,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-[400] text-[#55517B] dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
                   ZAR
@@ -214,7 +214,7 @@ export const Metadata = () => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-[400] text-[#55517B] lg:text-left dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
                   Redeemable through a Mesh account at{" "}
@@ -229,7 +229,7 @@ export const Metadata = () => {
                   Attestation_of_reserve
                 </p>
                 <a
-                  className="text-lg font-[400] tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
+                  className="text-lg font-normal tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
                   href="#"
                 >
          

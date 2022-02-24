@@ -46,7 +46,7 @@ export const Hero = () => {
           ></Image>
         </div>
         <div>
-          <p className="text-md z-50 text-center font-[300] text-gray-300/70">
+          <p className="z-50 font-light text-center text-md text-gray-300/70">
             Individuals, institutions, wallets, exchanges, crypto hodlrs, and
             market makers can now access the speed, transparency, and trust of
             mZAR. Everyone is invited.

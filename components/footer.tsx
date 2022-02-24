@@ -29,7 +29,7 @@ export const Footer = () => {
           " mx-8   border-t-[1px]  border-[#707070] py-4 xl:py-2 font-poppins "
         }
       >
-        <div className={"text-[11px] font-bold"}>
+        <div className={"text-xs font-bold"}>
           <ul
             className={
               "flex-wrap gap-10 text-[#171433] text-center lg:text-left dark:text-white xl:pt-2  lg:flex"
@@ -87,7 +87,7 @@ export const Footer = () => {
         </div>
       </div>
       <div >
-        <p className={" mb-2 md:py-4 xl:py-2 px-10 xl:px-8 md:text-center lg:text-left font-poppins text-[11px] text-[#171433] dark:text-[#707070] "}>
+        <p className={" mb-2 md:py-4 xl:py-2 px-10 xl:px-8 md:text-center lg:text-left font-poppins text-xs text-[#171433] dark:text-[#707070] "}>
           Copyright 2021 Mesh,Inc. All rights reserved | MESH 87 00-844
           Netherlands Capital 100 000 PLN, NIP:5272870947{" "}
         </p>
