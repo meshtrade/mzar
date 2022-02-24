@@ -7,7 +7,7 @@ export const Mesh = () => {
     <div className={"mx-8  border-b-[1px] border-[#707070]"}>
       <div
         className={
-          "flex items-center justify-center bg-white font-sans text-base text-[#171433]"
+          "flex items-center justify-center font-sans text-base text-[#171433] dark:text-white"
         }
       >
         <p>Trusted by:</p>
