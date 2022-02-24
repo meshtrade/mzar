@@ -6,8 +6,24 @@ import { Navbar } from "../components/nav-bar";
 import { Mesh } from "../components/mesh";
 import Footer from "../components/footer";
 import Metadata from "../components/metadata";
+import { useEffect, useState } from "react";
+import { Stellar, StellarTOML } from "../lib/stellar";
 
 const Home: NextPage = () => {
+  const [toml, setToml] = useState<StellarTOML>();
+  useEffect(() => {
+    const resolveTOML = async () => {
+      return await Stellar.resolveTOML();
+    };
+    try {
+      resolveTOML().then((toml) => {
+        setToml(toml);
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
+
   return (
     <div>
       <Head>
@@ -21,7 +37,11 @@ const Home: NextPage = () => {
         <Hero />
         <Mesh />
         <About />
-        <Metadata />
+        <Metadata
+          currency={toml?.CURRENCIES[0]}
+          orgDocumentation={toml?.DOCUMENTATION}
+          issuerAddress={toml?.ACCOUNTS[0]}
+        />
         <Footer />
       </main>
     </div>

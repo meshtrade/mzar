@@ -1,12 +1,17 @@
 import React from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
-import circle from "../images/full-circle.png";
 import right from "../images/right-side.png";
-import { Fragment } from "react";
 import mZAR from "../images/mZAR-coin.png";
+import { Currency, OrgDocumentation } from "../lib/stellar";
 
-export const Metadata = () => {
+export interface MetaDataProps {
+  orgDocumentation?: OrgDocumentation;
+  currency?: Currency;
+  issuerAddress?: string;
+}
+
+export const Metadata = (props: MetaDataProps) => {
   return (
     <div
       id="asset-metadata"
@@ -51,6 +56,7 @@ export const Metadata = () => {
             </Tab>
           </Tab.List>
           <Tab.Panels>
+            {/* Organisation MetaData */}
             <Tab.Panel>
               <div className={"flex items-center justify-center py-8  md:pt-12"}>
                 <Image
@@ -59,7 +65,7 @@ export const Metadata = () => {
                   priority
                   width={70}
                   height={70}
-                ></Image>
+                />
               </div>
               <div
                 className={
@@ -74,7 +80,7 @@ export const Metadata = () => {
                     "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  Mesh Trade South Africa (Pty) Ltd
+                  {props.orgDocumentation?.ORG_NAME ?? "-"}
                 </p>
 
                 <p className={"text-lg font-bold text-[#DE1B55]"}>Website</p>
@@ -83,7 +89,7 @@ export const Metadata = () => {
                     "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  https://mzar.mesh.trade
+                  {props.orgDocumentation?.ORG_URL ?? "-"}
                 </p>
 
                 <p className={" text-lg font-bold text-[#DE1B55]"}>
@@ -94,11 +100,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg  font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
-                  Mesh is a multi-sided, cross-asset platform that provides
-                  universal, direct access for all participants to a trusted
-                  global capital marketplace. Mesh makes it possible to Create,
-                  Issue, Trade, and Own tokenized digital assets over their full
-                  Lifecycle giving everyone access to grow their wealth.
+                  {props.orgDocumentation?.ORG_DESCRIPTION ?? "-"}
                 </p>
                 <p className={"text-lg font-bold text-[#DE1B55]"}>
                   Twitter Account
@@ -108,7 +110,7 @@ export const Metadata = () => {
                     "font-roboto text-lg font-normal  text-[#55517B] dark:text-white"
                   }
                 >
-                  @mesh_trade
+                  {props.orgDocumentation?.ORG_TWITTER ?? "-"}
                 </p>
                 <p className={" text-lg font-bold text-[#DE1B55]"}>
                   Official Email
@@ -117,10 +119,11 @@ export const Metadata = () => {
                   href="mailto:hello@mesh.trade"
                   className="cursor-pointer font-roboto text-lg font-normal text-[#55517B] hover:text-[#30B0B0] dark:text-white"
                 >
-                  hello@mesh.trade
+                  {props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "-"}
                 </a>
               </div>
             </Tab.Panel>
+            {/* Currency */}
             <Tab.Panel>
               <div className={"flex items-center justify-center  py-8"}>
                 <Image
@@ -129,7 +132,7 @@ export const Metadata = () => {
                   priority
                   width={70}
                   height={70}
-                ></Image>
+                />
               </div>
               <div
                 className={
@@ -144,7 +147,7 @@ export const Metadata = () => {
                     "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  mZAR
+                  {props.currency?.code ?? "-"}
                 </p>
                 <p className={"text-center text-lg font-bold text-[#DE1B55]"}>
                   Issuer Address
@@ -154,7 +157,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
-                  GCBNWTCCMC32UHZ5OC C2PNMFDGXRVPA7MFFBF FTCVW77SX5PMRB7Q4BY
+                  {props.issuerAddress ?? "-"}
                 </p>
 
                 <p className={" text-lg font-bold text-[#DE1B55]"}>
@@ -165,7 +168,7 @@ export const Metadata = () => {
                     "text-center font-robototext-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  ZAR Mesh
+                  {props.currency?.name ?? "-"}
                 </p>
                 <p className={" text-lg font-bold text-[#DE1B55]"}>
                   Description
@@ -175,9 +178,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
-                  mZAR is a fully collateralized South African ZAR stablecoin,
-                  based on the open fiat stablecoin framework of Mesh. mZAR is
-                  fully redeemable for ZAR held in an account managed by Mesh.
+                  {props.currency?.desc ?? "-"}
                 </p>
                 <p className={" text-lg font-bold text-[#DE1B55]"}>
                   Anchored Asset
@@ -187,7 +188,8 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  true
+                  {props.currency?.is_asset_anchored.toString().toUpperCase() ??
+                    "-"}
                 </p>
                 <p className={" text-lg font-bold text-[#DE1B55]"}>
                   Anchored Asset Type
@@ -197,7 +199,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  fiat
+                  {props.currency?.anchor_asset_type.toUpperCase() ?? "-"}
                 </p>
                 <p className={"text-lg font-bold text-[#DE1B55]"}>
                   Anchor Asset
@@ -207,7 +209,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
                   }
                 >
-                  ZAR
+                  {props.currency?.anchor_asset ?? "-"}
                 </p>
                 <p className={"text-lg font-bold text-[#DE1B55]"}>
                   Redemption Instructions
@@ -217,23 +219,18 @@ export const Metadata = () => {
                     "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left dark:text-white"
                   }
                 >
-                  Redeemable through a Mesh account at{" "}
-                  <a
-                    className="tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
-                    href="https://www.mesh.trade/"
-                  >
-                    mesh.trade
-                  </a>
+                  {props.currency?.redemption_instructions ?? "-"}
                 </p>
                 <p className={"text-lg font-bold text-[#DE1B55]"}>
                   Attestation_of_reserve
                 </p>
                 <a
                   className="text-lg font-normal tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
-                  href="#"
+                  href={props.currency?.attestation_of_reserve ?? "#"}
+                  target="_blank"
+                  rel="nofollow noreferrer"
                 >
-         
-                  mzar.mesh.trade
+                  {props.currency?.attestation_of_reserve ?? "-"}
                 </a>
               </div>
             </Tab.Panel>
