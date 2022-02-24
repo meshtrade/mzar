@@ -1,0 +1,36 @@
+VERSION = "2.0.0"
+NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
+ACCOUNTS = [
+    # issuance account
+    "GCBNWTCCMC32UHZ5OCC2PNMFDGXRVPA7MFFBFFTCVW77SX5PMRB7Q4BY",
+    # operational account
+    "GAGXO5ZHDG3AZDKCNTBZUNQG37MWMFN4L2L2PP2OGF3UEKUWE7X4AP6S",
+    # market infrastructure account
+    "GBZ64IWKMZCVEFJCWODLFRFKWWZY6W7M72RXLOAGCJQ67X4XUHANU7GV"
+]
+
+[DOCUMENTATION]
+ORG_NAME = "Mesh Trade South Africa (Pty) Ltd"
+ORG_URL = "https://mesh.trade"
+ORG_LOGO = "https://mzar.mesh.trade/org_logo.png"
+ORG_DESCRIPTION = "Mesh is a multi-sided, cross-asset platform that provides universal, direct access for all participants to a trusted global capital marketplace. Mesh makes it possible to Create, Issue, Trade, and Own tokenized digital assets over their full Lifecycle giving everyone access to grow their wealth."
+ORG_PHYSICAL_ADDRESS = "Netherlands : De Cuserstraat 93, Amsterdam, CV | South Africa : 8a Jellicoe Avenue, Rosebank, Johannesburg, 2196"
+ORG_TWITTER = "@mesh_trade"
+ORG_OFFICIAL_EMAIL = "hello@mesh.trade"
+ORG_SUPPORT_EMAIL = "help@mesh.trade"
+
+# mZAR asset
+[[CURRENCIES]]
+code = "mZAR"
+#status = "test"
+issuer = "GCBNWTCCMC32UHZ5OCC2PNMFDGXRVPA7MFFBFFTCVW77SX5PMRB7Q4BY"
+display_decimals = 2
+name = "ZAR Mesh"
+desc = "mZAR is a fully collateralized South African ZAR stablecoin, based on the open fiat stablecoin framework of Mesh. mZAR is fully redeemable for ZAR held in an account managed by Mesh."
+conditions = "Redeeming requires a valid South African bank account and KYC verification on https://app.mesh.trade"
+image = "https://mzar.mesh.trade/logo.png"
+is_asset_anchored = true
+attestation_of_reserve = "https://mzar.mesh.trade/verify-reserves"
+anchor_asset_type = "fiat"
+anchor_asset = "ZAR"
+redemption_instructions = "Redeemable through a Mesh account at https://app.mesh.trade"
