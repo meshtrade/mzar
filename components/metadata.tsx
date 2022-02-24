@@ -1,21 +1,20 @@
 import React from "react";
-import {Tab} from "@headlessui/react";
+import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import right from "../images/right-side.png";
 import mZAR from "../images/mZAR-coin.png";
-import {Currency, OrgDocumentation, StellarTOML} from "../lib/stellar";
+import { Currency, OrgDocumentation } from "../lib/stellar";
 
 export interface MetaDataProps {
-  orgDocumentation?: OrgDocumentation,
-  currency?: Currency,
-  issuerAddress?: string,
+  orgDocumentation?: OrgDocumentation;
+  currency?: Currency;
+  issuerAddress?: string;
 }
 
 export const Metadata = (props: MetaDataProps) => {
   return (
     <div id="asset-metadata" className={"mb-20  grid px-4 lg:grid-cols-4"}>
-      <div className={""}></div>
-      <div className={"lg:w-[600px]"}>
+      <div className={"lg:col-start-2 lg:w-[600px]"}>
         <div className={"lg:py-8"}>
           <div
             className={
@@ -34,7 +33,7 @@ export const Metadata = (props: MetaDataProps) => {
             }
           >
             <Tab
-              className={({selected}) =>
+              className={({ selected }) =>
                 selected
                   ? " font-poppins  text-[14px] font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[4px] focus:outline-none md:underline-offset-[11px]"
                   : " font-poppins text-[14px] font-[500] tracking-wide text-[#55517B] text-opacity-30 "
@@ -43,7 +42,7 @@ export const Metadata = (props: MetaDataProps) => {
               ORGANIZATION METADATA
             </Tab>
             <Tab
-              className={({selected}) =>
+              className={({ selected }) =>
                 selected
                   ? " font-poppins  text-[14px] font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[4px] md:underline-offset-[11px]"
                   : " font-poppins text-[14px] font-[500] tracking-wide text-[#55517B] text-opacity-30"
@@ -185,7 +184,8 @@ export const Metadata = (props: MetaDataProps) => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  {props.currency?.is_asset_anchored.toString().toUpperCase() ?? "-"}
+                  {props.currency?.is_asset_anchored.toString().toUpperCase() ??
+                    "-"}
                 </p>
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
                   Anchored Asset Type
@@ -235,7 +235,7 @@ export const Metadata = (props: MetaDataProps) => {
       </div>
 
       <div className={"absolute right-0 hidden xl:block"}>
-        <Image src={right} alt="full-circle" width={"400px"} height={"600px"}/>
+        <Image src={right} alt="full-circle" width={"400px"} height={"600px"} />
       </div>
     </div>
   );
