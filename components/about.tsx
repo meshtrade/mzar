@@ -5,7 +5,7 @@ import design from "../images/left-design.png";
 
 export const About = () => {
   return (
-    <div className={"grid font-poppins  lg:grid-cols-3"}>
+    <div id="about" className={"grid font-poppins  lg:grid-cols-3"}>
       <div
         className={"inset-y-0 -left-12 mt-9 w-64 md:w-[400px] 2xl:w-[500px]"}
       >

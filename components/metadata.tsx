@@ -8,7 +8,7 @@ import mZAR from "../images/mZAR-coin.png";
 
 export const Metadata = () => {
   return (
-    <div className={"mb-20  grid px-4 lg:grid-cols-4"}>
+    <div id="asset-metadata" className={"mb-20  grid px-4 lg:grid-cols-4"}>
       <div className={""}></div>
       <div className={"lg:w-[600px]"}>
         <div className={"lg:py-8"}>

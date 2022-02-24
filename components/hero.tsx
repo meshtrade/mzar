@@ -3,16 +3,15 @@ import Image from "next/image";
 import mZAR from "../images/mZAR-coin.png";
 import Creative from "../images/mesh-creative.png";
 
-
 export const Hero = () => {
   return (
-    <div className="grid h-screen -mt-10 place-content-center font-poppins">
-      <div className="absolute inset-0 w-screen h-screen overflow-hidden -z-10">
-        <div className="absolute top-0 h-screen mesh-gradient -left-36 w-overflow"></div>
-  
-       {/* FEATURE BACKGROUND IMAGE */}
-       
-        <div className="absolute scale-150 -rotate-180 translate-x-1/2 -translate-y-1/2 top-full">
+    <div className="-mt-10 grid h-screen place-content-center font-poppins">
+      <div className="absolute inset-0 -z-10 h-screen w-screen overflow-hidden">
+        <div className="mesh-gradient absolute top-0 -left-36 h-screen w-overflow"></div>
+
+        {/* FEATURE BACKGROUND IMAGE */}
+
+        <div className="absolute top-full translate-x-1/2 -translate-y-1/2 -rotate-180 scale-150">
           <Image
             src={Creative}
             alt={"Mesh mZAR token icon"}
@@ -33,7 +32,7 @@ export const Hero = () => {
           >
             <a href="https://mesh.trade">Meet mZAR.</a>
           </h1>
-          <p className="text-[20px] font-[300] text-center text-white">
+          <p className="text-center text-[20px] font-[300] text-white">
             A stablecoin to bridge the gap between TradFi and Defi.
           </p>
         </div>
@@ -47,20 +46,18 @@ export const Hero = () => {
           ></Image>
         </div>
         <div>
-          <p className="z-50 text-center text-md text-gray-300/70 font-[300]">
+          <p className="text-md z-50 text-center font-[300] text-gray-300/70">
             Individuals, institutions, wallets, exchanges, crypto hodlrs, and
             market makers can now access the speed, transparency, and trust of
             mZAR. Everyone is invited.
           </p>
         </div>
-        <div className="grid pt-12 place-content-center">
+        <div id="buy-mzar" className="grid place-content-center pt-12">
           <button className="grid h-12  place-content-center rounded-md bg-[#30B0B0] px-10 font-poppins text-white shadow-xl">
             Buy mZAR NOW
           </button>
         </div>
       </div>
-
     </div>
-
   );
 };
