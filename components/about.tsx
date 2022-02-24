@@ -51,15 +51,14 @@ export const About = () => {
             1 mZAR equals 1 ZAR. At all times
           </h2>
         </p>
-        <div className={"flex items-center justify-center py-8"}>
-          <a href="/">
-            <Image
-              src={circle}
-              alt="full-circle"
-              width={"200px"}
-              height={"200px"}
-            />
-          </a>
+        <div className={"flex animate-blob items-center justify-center py-8"}>
+          <Image
+            className=""
+            src={circle}
+            alt="full-circle"
+            width={"200px"}
+            height={"200px"}
+          />
         </div>
       </div>
     </div>
