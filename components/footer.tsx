@@ -17,7 +17,7 @@ export const Footer = () => {
           </div>
 
           <div className={"flex items-center justify-center"}>
-            <Link href={"/"}>
+            <Link href={"/"} passHref>
               <Image src={logo} alt="logo" />
             </Link>
           </div>
