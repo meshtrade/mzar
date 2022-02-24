@@ -1,12 +1,17 @@
 import React from "react";
-import { Tab } from "@headlessui/react";
+import {Tab} from "@headlessui/react";
 import Image from "next/image";
-import circle from "../images/full-circle.png";
 import right from "../images/right-side.png";
-import { Fragment } from "react";
 import mZAR from "../images/mZAR-coin.png";
+import {Currency, OrgDocumentation, StellarTOML} from "../lib/stellar";
 
-export const Metadata = () => {
+export interface MetaDataProps {
+  orgDocumentation?: OrgDocumentation,
+  currency?: Currency,
+  issuerAddress?: string,
+}
+
+export const Metadata = (props: MetaDataProps) => {
   return (
     <div id="asset-metadata" className={"mb-20  grid px-4 lg:grid-cols-4"}>
       <div className={""}></div>
@@ -29,7 +34,7 @@ export const Metadata = () => {
             }
           >
             <Tab
-              className={({ selected }) =>
+              className={({selected}) =>
                 selected
                   ? " font-poppins  text-[14px] font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[4px] focus:outline-none md:underline-offset-[11px]"
                   : " font-poppins text-[14px] font-[500] tracking-wide text-[#55517B] text-opacity-30 "
@@ -38,7 +43,7 @@ export const Metadata = () => {
               ORGANIZATION METADATA
             </Tab>
             <Tab
-              className={({ selected }) =>
+              className={({selected}) =>
                 selected
                   ? " font-poppins  text-[14px] font-[500] tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[4px] md:underline-offset-[11px]"
                   : " font-poppins text-[14px] font-[500] tracking-wide text-[#55517B] text-opacity-30"
@@ -48,6 +53,7 @@ export const Metadata = () => {
             </Tab>
           </Tab.List>
           <Tab.Panels>
+            {/* Organisation MetaData */}
             <Tab.Panel>
               <div className={"flex items-center justify-center py-8"}>
                 <Image
@@ -56,7 +62,7 @@ export const Metadata = () => {
                   priority
                   width={70}
                   height={70}
-                ></Image>
+                />
               </div>
               <div
                 className={
@@ -71,7 +77,7 @@ export const Metadata = () => {
                     "font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  Mesh Trade South Africa (Pty) Ltd
+                  {props.orgDocumentation?.ORG_NAME ?? "-"}
                 </p>
 
                 <p className={"text-xl font-bold text-[#DE1B55]"}>Website</p>
@@ -80,7 +86,7 @@ export const Metadata = () => {
                     "font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  https://mzar.mesh.trade
+                  {props.orgDocumentation?.ORG_URL ?? "-"}
                 </p>
 
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
@@ -91,11 +97,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px]  font-[300] text-[#55517B] lg:text-left"
                   }
                 >
-                  Mesh is a multi-sided, cross-asset platform that provides
-                  universal, direct access for all participants to a trusted
-                  global capital marketplace. Mesh makes it possible to Create,
-                  Issue, Trade, and Own tokenized digital assets over their full
-                  Lifecycle giving everyone access to grow their wealth.
+                  {props.orgDocumentation?.ORG_DESCRIPTION ?? "-"}
                 </p>
                 <p className={"text-xl font-bold text-[#DE1B55]"}>
                   Twitter Account
@@ -105,7 +107,7 @@ export const Metadata = () => {
                     "font-roboto text-[18px] font-[300]  text-[#55517B]"
                   }
                 >
-                  @mesh_trade
+                  {props.orgDocumentation?.ORG_TWITTER ?? "-"}
                 </p>
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
                   Official Email
@@ -114,10 +116,11 @@ export const Metadata = () => {
                   href="mailto:hello@mesh.trade"
                   className="cursor-pointer font-roboto font-[300] text-[#55517B] hover:text-[#30B0B0]"
                 >
-                  hello@mesh.trade
+                  {props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "-"}
                 </a>
               </div>
             </Tab.Panel>
+            {/* Currency */}
             <Tab.Panel className={""}>
               <div className={"flex items-center justify-center  py-8"}>
                 <Image
@@ -126,7 +129,7 @@ export const Metadata = () => {
                   priority
                   width={70}
                   height={70}
-                ></Image>
+                />
               </div>
               <div
                 className={
@@ -141,7 +144,7 @@ export const Metadata = () => {
                     "font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  mZAR
+                  {props.currency?.code ?? "-"}
                 </p>
                 <p className={"text-center text-xl font-bold text-[#DE1B55]"}>
                   Issuer Address
@@ -151,7 +154,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B] lg:text-left"
                   }
                 >
-                  GCBNWTCCMC32UHZ5OC C2PNMFDGXRVPA7MFFBF FTCVW77SX5PMRB7Q4BY
+                  {props.issuerAddress ?? "-"}
                 </p>
 
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
@@ -162,7 +165,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  ZAR Mesh
+                  {props.currency?.name ?? "-"}
                 </p>
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
                   Description
@@ -172,9 +175,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B] lg:text-left"
                   }
                 >
-                  mZAR is a fully collateralized South African ZAR stablecoin,
-                  based on the open fiat stablecoin framework of Mesh. mZAR is
-                  fully redeemable for ZAR held in an account managed by Mesh.
+                  {props.currency?.desc ?? "-"}
                 </p>
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
                   Anchored Asset
@@ -184,7 +185,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  true
+                  {props.currency?.is_asset_anchored.toString().toUpperCase() ?? "-"}
                 </p>
                 <p className={" text-xl font-bold text-[#DE1B55]"}>
                   Anchored Asset Type
@@ -194,7 +195,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  fiat
+                  {props.currency?.anchor_asset_type.toUpperCase() ?? "-"}
                 </p>
                 <p className={"text-xl font-bold text-[#DE1B55]"}>
                   Anchor Asset
@@ -204,7 +205,7 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B]"
                   }
                 >
-                  ZAR
+                  {props.currency?.anchor_asset ?? "-"}
                 </p>
                 <p className={"text-xl font-bold text-[#DE1B55]"}>
                   Redemption Instructions
@@ -214,23 +215,18 @@ export const Metadata = () => {
                     "text-center font-roboto text-[18px] font-[300] text-[#55517B] lg:text-left"
                   }
                 >
-                  Redeemable through a Mesh account at{" "}
-                  <a
-                    className="tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
-                    href="https://www.mesh.trade/"
-                  >
-                    mesh.trade
-                  </a>
+                  {props.currency?.redemption_instructions ?? "-"}
                 </p>
                 <p className={"text-xl font-bold text-[#DE1B55]"}>
                   Attestation_of_reserve
                 </p>
                 <a
                   className="text-[18px] font-[300] tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
-                  href="#"
+                  href={props.currency?.attestation_of_reserve ?? "#"}
+                  target="_blank"
+                  rel="nofollow noreferrer"
                 >
-                  {" "}
-                  mzar.mesh.trade
+                  {props.currency?.attestation_of_reserve ?? "-"}
                 </a>
               </div>
             </Tab.Panel>
@@ -239,7 +235,7 @@ export const Metadata = () => {
       </div>
 
       <div className={"absolute right-0 hidden xl:block"}>
-        <Image src={right} alt="full-circle" width={"400px"} height={"600px"} />
+        <Image src={right} alt="full-circle" width={"400px"} height={"600px"}/>
       </div>
     </div>
   );
