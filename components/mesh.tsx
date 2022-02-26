@@ -4,10 +4,10 @@ import logo from "../images/mesh-logo.png";
 
 export const Mesh = () => {
   return (
-    <div className={"mx-8  border-b-[1px] border-[#707070]"}>
+    <div className={"mx-8 -mt-12  border-b-[1px] border-[#707070]"}>
       <div
         className={
-          "flex items-center justify-center font-sans text-base text-[#171433] dark:text-white"
+          "flex items-center justify-center font-sans text-base text-[#171433]"
         }
       >
         <p>Trusted by:</p>
