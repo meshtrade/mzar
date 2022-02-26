@@ -53,7 +53,7 @@ export const Hero = () => {
             market makers can now access the speed, transparency, and trust of
             mZAR. Everyone is invited.
           </p>
-          <p className="z-50 text-center lg:block md:text-lg text-md text-gray-300/70 lg:text-left">
+          <p className="z-50 hidden text-center lg:block md:text-lg text-md text-gray-300/70 lg:text-left">
             Individuals, institutions, wallets, exchanges, crypto hodlrs, and
             market makers can now access the speed, transparency, and trust of
             mZAR. <br/><br/>Everyone is invited.
