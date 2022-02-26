@@ -16,7 +16,7 @@ export const Metadata = (props: MetaDataProps) => {
     <div
       id="asset-metadata"
       className={
-        "2xl:-mt-70 mb-24 flex items-center justify-center px-4 lg:-mt-32 lg:px-0 xl:-mt-52 "
+        "2xl:-mt-70 mb-24 flex -mt-10 items-center justify-center px-10 lg:-mt-32 lg:px-0 xl:-mt-52 "
       }
     >
       <div></div>
@@ -35,14 +35,14 @@ export const Metadata = (props: MetaDataProps) => {
         <Tab.Group>
           <Tab.List
             className={
-              "mx-10 flex  flex-wrap justify-between border-b border-[#DE1B55]  py-2 font-medium sm:mx-40 md:mx-32 2xl:mx-28 "
+              " flex  flex-wrap justify-between border-b border-[#DE1B55]  py-2 font-medium sm:mx-40 2xl:mx-28 "
             }
           >
             <Tab
               className={({ selected }) =>
                 selected
                   ? " font-poppins  text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px] focus:outline-none "
-                  : " font-poppins text-sm tracking-wide text-[#55517B] text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
+                  : " font-poppins text-sm font-medium tracking-wide text-[#55517B] text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
               }
             >
               ORGANIZATION METADATA
@@ -50,8 +50,8 @@ export const Metadata = (props: MetaDataProps) => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? " font-poppins text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px]"
-                  : " font-poppins text-sm tracking-wide text-[#55517B] text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
+                ? " font-poppins  text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px] focus:outline-none "
+                : " font-poppins font-medium text-sm tracking-wide text-[#55517B] text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
               }
             >
               CURRENCY
@@ -61,7 +61,7 @@ export const Metadata = (props: MetaDataProps) => {
             {/* Organisation MetaData */}
             <Tab.Panel>
               <div
-                className={"flex items-center justify-center py-8  md:pt-12"}
+                className={"flex items-center justify-center py-8 px-10 md:pt-12"}
               >
                 <Image
                   src={mZAR}
@@ -81,7 +81,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </h2>
                 <p
                   className={
-                    "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal text-[#55517B]"
                   }
                 >
                   {props.orgDocumentation?.ORG_NAME ?? "-"}
@@ -90,7 +90,7 @@ export const Metadata = (props: MetaDataProps) => {
                 <p className={"text-lg font-bold text-[#DE1B55]"}>Website</p>
                 <p
                   className={
-                    "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal text-[#55517B]"
                   }
                 >
                   {props.orgDocumentation?.ORG_URL ?? "-"}
@@ -101,7 +101,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg  font-normal text-[#55517B] dark:text-white lg:text-left"
+                    "text-center font-roboto text-lg  font-normal text-[#55517B]  lg:text-left"
                   }
                 >
                   {props.orgDocumentation?.ORG_DESCRIPTION ?? "-"}
@@ -111,7 +111,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "font-roboto text-lg font-normal  text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal  text-[#55517B]"
                   }
                 >
                   {props.orgDocumentation?.ORG_TWITTER ?? "-"}
@@ -121,7 +121,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <a
                   href="mailto:hello@mesh.trade"
-                  className="cursor-pointer font-roboto text-lg font-normal text-[#55517B] hover:text-[#30B0B0] dark:text-white"
+                  className="cursor-pointer font-roboto text-lg font-normal text-[#55517B] hover:text-[#30B0B0]"
                 >
                   {props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "-"}
                 </a>
@@ -129,7 +129,9 @@ export const Metadata = (props: MetaDataProps) => {
             </Tab.Panel>
             {/* Currency */}
             <Tab.Panel>
-              <div className={"flex items-center justify-center  py-8"}>
+            <div
+                className={"flex items-center justify-center py-8 px-10 md:pt-12"}
+              >
                 <Image
                   src={mZAR}
                   alt={"Mesh mZAR token icon"}
@@ -148,17 +150,17 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "font-roboto text-lg font-normal text-[#55517B] dark:text-white"
+                    "font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.code ?? "-"}
                 </p>
-                <p className={"text-center text-lg font-bold text-[#DE1B55]"}>
+                <p className={"text-center flex-wrap text-lg font-bold text-[#DE1B55] "}>
                   Issuer Address
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white lg:text-left"
+                    "text-center break-all  font-roboto text-lg font-normal text-[#55517B] lg:text-left"
                   }
                 >
                   {props.issuerAddress ?? "-"}
@@ -169,7 +171,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "font-robototext-lg text-center font-normal text-[#55517B] dark:text-white"
+                    "font-robototext-lg text-center font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.name ?? "-"}
@@ -179,7 +181,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white lg:text-left"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left"
                   }
                 >
                   {props.currency?.desc ?? "-"}
@@ -189,7 +191,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.is_asset_anchored.toString().toUpperCase() ??
@@ -200,7 +202,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.anchor_asset_type.toUpperCase() ?? "-"}
@@ -210,7 +212,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.anchor_asset ?? "-"}
@@ -220,7 +222,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] dark:text-white lg:text-left"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left"
                   }
                 >
                   {props.currency?.redemption_instructions ?? "-"}

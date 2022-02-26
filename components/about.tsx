@@ -22,7 +22,7 @@ export const About = () => {
       </div>
       <div
         className={
-          "2xl:py-30 -mt-14  px-8 md:-mt-24  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
+          "2xl:py-30 -mt-20  px-8 md:-mt-28  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
         }
       >
         <h1
@@ -36,7 +36,7 @@ export const About = () => {
         <div className={"flex justify-center lg:justify-center"}>
           <div
             className={
-              " flex justify-center pb-8 text-2xl font-normal text-[#DE1B55]   lg:justify-center"
+              " flex justify-center pb-8 text-2xl font-light text-[#DE1B55]   lg:justify-center"
             }
           >
             <p>
@@ -52,7 +52,7 @@ export const About = () => {
           <div className={"col-span-2"}>
             <p
               className={
-                "flex py-2 pt-4 font-roboto text-lg font-normal text-[#55517B] dark:text-white  md:pr-8 lg:pr-32  "
+                "flex py-2 pt-4 font-roboto text-lg font-normal text-[#55517B]  md:pr-8 lg:pr-32  "
               }
             >
               We have created mZAR to bridge the gap between TradFi and DeFi, to
@@ -61,7 +61,7 @@ export const About = () => {
             </p>
             <p
               className={
-                "py-2 pt-4 font-roboto text-lg font-normal text-[#55517B] dark:text-white lg:pr-32"
+                "py-2 pt-4 font-roboto text-lg font-normal text-[#55517B] lg:pr-32"
               }
             >
               mZAR is a fully collaterized South African ZAR stablecoin, based

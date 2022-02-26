@@ -7,10 +7,10 @@ export const Footer = () => {
   return (
     <div>
       <div className="font-poppins">
-        <div className={"mx-8  border-t-[1px] border-[#707070] pt-4"}>
+        <div className={"mx-8  border-t-[1px] border-[#707070] py-4"}>
           <div
             className={
-              "flex items-center justify-center font-sans text-base text-[#171433] dark:text-white"
+              "flex items-center justify-center font-sans text-base text-[#171433] "
             }
           >
             <p>Supported Wallets:</p>
@@ -33,7 +33,7 @@ export const Footer = () => {
         <div className={"text-xs font-bold"}>
           <ul
             className={
-              "flex-wrap gap-10 text-center text-[#171433] dark:text-white lg:flex lg:text-left  xl:pt-2"
+              "flex-wrap grid gap-2 text-center text-[#171433]  lg:flex lg:text-left  xl:pt-2"
             }
           >
             <li className={"hover:text-[#DE1B55]"}>
@@ -45,7 +45,7 @@ export const Footer = () => {
                 Platform as a Service Agreement
               </a>
             </li>
-            <li className={"hover:text-[#DE1B55] dark:text-white"}>
+            <li className={"hover:text-[#DE1B55] "}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Authorised-User-Service/v1.0.0/3.%20MESH_Authorised%20User%20Service%20Agreement.20210730.FINAL.pdf"
                 target="_blank"
@@ -96,7 +96,7 @@ export const Footer = () => {
       <div>
         <p
           className={
-            " mb-2 px-10 font-poppins text-xs text-[#171433] dark:text-[#707070] md:py-4 md:text-center lg:text-left xl:py-2 xl:px-8 "
+            " mb-2 px-10 font-poppins text-xs text-center text-[#171433] dark:text-[#707070] md:py-4 md:text-center lg:text-left xl:py-2 xl:px-8 "
           }
         >
           Copyright 2021 Mesh,Inc. All rights reserved | MESH 87 00-844

@@ -4,6 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
     extend: {
       animation: {
         blob: "blob 7s infinite"
@@ -27,6 +28,9 @@ module.exports = {
       },
       width: {
         'overflow': '150%',
+      },
+      screens: {
+        '3xl': '1700px',
       },
     },
   },

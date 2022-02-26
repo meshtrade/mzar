@@ -7,7 +7,7 @@ import Link from "next/link";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="flex flex-wrap justify-between bg-transparent px-8 py-4 ">
+    <nav className="flex flex-wrap justify-between px-8 py-5 bg-transparent ">
       <div className="">
         <Image src={mZARLogo} alt={"Mesh mZAR token icon"} priority></Image>
       </div>
@@ -15,22 +15,32 @@ export const Navbar = () => {
         <button
           aria-label="Open Menu"
           title="Open Menu"
-          className="focus:shadow-outline hover:bg-primary focus:bg-primary -mr-1 rounded p-2 transition duration-200 focus:outline-none "
+          className="p-2 -mr-1 transition duration-200 rounded focus:shadow-outline hover:bg-primary focus:bg-primary focus:outline-none "
           onClick={() => setIsMenuOpen(true)}
         >
-          <svg className="w-5 text-white" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-            />
-            <path
-              fill="currentColor"
-              d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-            />
-            <path
-              fill="currentColor"
-              d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-            />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <g id="ic_menu_24px" transform="translate(-8929 165)">
+              <rect
+                id="Rectangle_3694"
+                data-name="Rectangle 3694"
+                width="24"
+                height="24"
+                transform="translate(8929 -165)"
+                fill="none"
+              />
+              <path
+                id="ic_menu_24px-2"
+                data-name="ic_menu_24px"
+                d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z"
+                transform="translate(8929 -165)"
+                fill="#fff"
+              />
+            </g>
           </svg>
         </button>
         {isMenuOpen && (
@@ -103,4 +113,6 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+
 export default Navbar;
