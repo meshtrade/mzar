@@ -81,7 +81,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </h2>
                 <p
                   className={
-                    "font-roboto text-lg font-normal text-[#55517B] e"
+                    "font-roboto text-lg font-normal text-[#55517B]"
                   }
                 >
                   {props.orgDocumentation?.ORG_NAME ?? "-"}
@@ -90,7 +90,7 @@ export const Metadata = (props: MetaDataProps) => {
                 <p className={"text-lg font-bold text-[#DE1B55]"}>Website</p>
                 <p
                   className={
-                    "font-roboto text-lg font-normal text-[#55517B] e"
+                    "font-roboto text-lg font-normal text-[#55517B]"
                   }
                 >
                   {props.orgDocumentation?.ORG_URL ?? "-"}
@@ -101,7 +101,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg  font-normal text-[#55517B] e lg:text-left"
+                    "text-center font-roboto text-lg  font-normal text-[#55517B]  lg:text-left"
                   }
                 >
                   {props.orgDocumentation?.ORG_DESCRIPTION ?? "-"}
@@ -202,7 +202,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] e"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.anchor_asset_type.toUpperCase() ?? "-"}
@@ -212,7 +212,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] e"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.anchor_asset ?? "-"}
@@ -222,7 +222,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-center font-roboto text-lg font-normal text-[#55517B] e lg:text-left"
+                    "text-center font-roboto text-lg font-normal text-[#55517B] lg:text-left"
                   }
                 >
                   {props.currency?.redemption_instructions ?? "-"}
