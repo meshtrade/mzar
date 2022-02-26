@@ -24,8 +24,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: "'Poppins', sans-serif;",
-        roboto: "'Roboto', sans-serif; ",
-        opensans: "'Open Sans', sans-serif;"
+        roboto: "'Roboto', sans-serif; "
       },
       width: {
         'overflow': '150%',
