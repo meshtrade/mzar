@@ -29,12 +29,12 @@ export const Hero = () => {
         <div>
           <h1
             className={
-              "  text-center text-4xl font-semibold text-white md:text-5xl lg:text-left"
+              "  text-center text-3xl font-semibold text-white md:text-5xl lg:text-left"
             }
           >
             <a href="https://mesh.trade">Meet mZAR.</a>
           </h1>
-          <p className="text-xl text-center text-white md:text-2xl lg:pr-10 lg:text-left">
+          <p className="text-lg text-center text-white md:text-2xl lg:pr-10 lg:text-left">
             A stablecoin to bridge the gap between TradFi and Defi.
           </p>
         </div>

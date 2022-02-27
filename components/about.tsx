@@ -15,14 +15,14 @@ export const About = () => {
       </div> */}
       <div
         className={
-          "  w-64 md:w-[380px]  lg:absolute lg:pt-5  lg:w-[500px]  5xl:w-[700px] "
+          "  w-64 md:w-[380px] -ml-10 animate-blob  lg:absolute lg:pt-5  pt-4 lg:w-[500px]  5xl:w-[700px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
       </div>
       <div
         className={
-          "2xl:py-30 -mt-20  px-8 md:-mt-28  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
+          "2xl:py-30 -mt-32  px-8 md:-mt-28  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
         }
       >
         <h1
