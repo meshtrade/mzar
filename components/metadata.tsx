@@ -100,11 +100,11 @@ export const Metadata = (props: MetaDataProps) => {
                 >
                   {props.orgDocumentation?.ORG_DESCRIPTION ?? "-"}
                 </p>
-                <p className={"text-lg font-bold text-[#DE1B55]"}>
+                <p className={"text-lg cursor-pointer font-bold text-[#DE1B55]"}>
                   Twitter Account
                 </p>
                 <p
-                  className={"font-roboto text-lg font-normal  text-[#55517B]"}
+                  className={"font-roboto text-lg font-normal  text-[#30B0B0]"}
                 >
                   {props.orgDocumentation?.ORG_TWITTER ?? "-"}
                 </p>
@@ -225,7 +225,7 @@ export const Metadata = (props: MetaDataProps) => {
                   Attestation_of_reserve
                 </p>
                 <a
-                  className="text-lg font-normal tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2"
+                  className="text-lg font-normal tracking-wide text-center md:text-left text-[#30B0B0] underline decoration-2 underline-offset-2"
                   href={props.currency?.attestation_of_reserve ?? "#"}
                   target="_blank"
                   rel="nofollow noreferrer"

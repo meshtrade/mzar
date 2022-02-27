@@ -17,6 +17,7 @@ export const Hero = () => {
             alt={"Mesh mZAR token icon"}
             className={"rotate-14 "}
             priority
+            quality={20}
             // width={400}
             // height={100}
           ></Image>
