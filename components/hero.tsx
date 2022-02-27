@@ -14,7 +14,7 @@ export const Hero = () => {
         <div className="absolute top-full -translate-x-[35%] -translate-y-[100%]  scale-[4.9] sm:-translate-x-1 sm:-translate-y-[80%] sm:scale-[3]  md:translate-x-10 md:-translate-y-[85%] md:scale-[2] lg:translate-x-2 lg:-translate-y-[98%] lg:scale-[1.8] xl:translate-x-8 xl:-translate-y-[88%] xl:scale-[1.6] 2xl:scale-[1.5] 3xl:scale-[1.4] 3xl:-translate-y-[80%] 4xl:scale-[1.3] 4xl:-translate-y-[75%] 4xl:translate-x-11 5xl:scale-[1.4] 5xl:translate-x-40 5xl:-translate-y-[75%]">
           <Image
             src={Creative}
-            alt={"Mesh mZAR token icon"}
+            alt={"Mesh mZAR loop design"}
             className={"rotate-14 "}
             priority
             quality={20}
