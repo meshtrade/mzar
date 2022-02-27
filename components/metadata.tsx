@@ -16,7 +16,7 @@ export const Metadata = (props: MetaDataProps) => {
     <div
       id="asset-metadata"
       className={
-        "2xl:-mt-70 mb-24 flex -mt-10 items-center justify-center px-10 lg:-mt-32 lg:px-0 xl:-mt-52 "
+        "2xl:-mt-70 mb-24 -mt-10 flex items-center justify-center px-10 lg:-mt-32 lg:px-0 xl:-mt-52 "
       }
     >
       <div></div>
@@ -50,8 +50,8 @@ export const Metadata = (props: MetaDataProps) => {
             <Tab
               className={({ selected }) =>
                 selected
-                ? " font-poppins  text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px] focus:outline-none "
-                : " font-poppins font-medium text-sm tracking-wide text-[#55517B] text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
+                  ? " font-poppins  text-sm  tracking-wide text-[#DE1B55] underline decoration-2 underline-offset-[11px] focus:outline-none "
+                  : " font-poppins text-sm font-medium tracking-wide text-[#55517B] text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
               }
             >
               CURRENCY
@@ -61,7 +61,9 @@ export const Metadata = (props: MetaDataProps) => {
             {/* Organisation MetaData */}
             <Tab.Panel>
               <div
-                className={"flex items-center justify-center py-8 px-10 md:pt-12"}
+                className={
+                  "flex items-center justify-center py-8 px-10 md:pt-12"
+                }
               >
                 <Image
                   src={mZAR}
@@ -79,20 +81,12 @@ export const Metadata = (props: MetaDataProps) => {
                 <h2 className={"text-lg  font-bold text-[#DE1B55]"}>
                   Organisation Name
                 </h2>
-                <p
-                  className={
-                    "font-roboto text-lg font-normal text-[#55517B]"
-                  }
-                >
+                <p className={"font-roboto text-lg font-normal text-[#55517B]"}>
                   {props.orgDocumentation?.ORG_NAME ?? "-"}
                 </p>
 
                 <p className={"text-lg font-bold text-[#DE1B55]"}>Website</p>
-                <p
-                  className={
-                    "font-roboto text-lg font-normal text-[#55517B]"
-                  }
-                >
+                <p className={"font-roboto text-lg font-normal text-[#55517B]"}>
                   {props.orgDocumentation?.ORG_URL ?? "-"}
                 </p>
 
@@ -110,9 +104,7 @@ export const Metadata = (props: MetaDataProps) => {
                   Twitter Account
                 </p>
                 <p
-                  className={
-                    "font-roboto text-lg font-normal  text-[#55517B]"
-                  }
+                  className={"font-roboto text-lg font-normal  text-[#55517B]"}
                 >
                   {props.orgDocumentation?.ORG_TWITTER ?? "-"}
                 </p>
@@ -120,17 +112,17 @@ export const Metadata = (props: MetaDataProps) => {
                   Official Email
                 </p>
                 <a
-                  href="mailto:hello@mesh.trade"
-                  className="cursor-pointer font-roboto text-lg font-normal text-[#55517B] hover:text-[#30B0B0]"
-                >
-                  {props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "-"}
-                </a>
+                  href={`mailto:${props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "hello@mesh.trade"}`}
+                  className="cursor-pointer font-roboto  text-lg  font-normal  text-[#30B0B0] hover:text-[#30B0B0]"
+                >{props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "hello@mesh.trade"}</a>
               </div>
             </Tab.Panel>
             {/* Currency */}
             <Tab.Panel>
-            <div
-                className={"flex items-center justify-center py-8 px-10 md:pt-12"}
+              <div
+                className={
+                  "flex items-center justify-center py-8 px-10 md:pt-12  "
+                }
               >
                 <Image
                   src={mZAR}
@@ -149,18 +141,20 @@ export const Metadata = (props: MetaDataProps) => {
                   Asset Code
                 </p>
                 <p
-                  className={
-                    "font-roboto text-lg font-normal text-[#55517B] "
-                  }
+                  className={"font-roboto text-lg font-normal text-[#55517B] "}
                 >
                   {props.currency?.code ?? "-"}
                 </p>
-                <p className={"text-center flex-wrap text-lg font-bold text-[#DE1B55] "}>
+                <p
+                  className={
+                    "flex-wrap text-center text-lg font-bold text-[#DE1B55] "
+                  }
+                >
                   Issuer Address
                 </p>
                 <p
                   className={
-                    "text-center break-all  font-roboto text-lg font-normal text-[#55517B] lg:text-left"
+                    "break-all text-center  font-roboto text-lg font-normal text-[#55517B] lg:text-left"
                   }
                 >
                   {props.issuerAddress ?? "-"}
@@ -171,7 +165,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "font-robototext-lg text-center font-normal text-[#55517B] "
+                    "text-center font-roboto text-lg font-normal text-[#55517B] "
                   }
                 >
                   {props.currency?.name ?? "-"}
@@ -244,7 +238,7 @@ export const Metadata = (props: MetaDataProps) => {
         </Tab.Group>
       </div>
 
-      <div className={"absolute right-0 hidden w-80 xl:-mt-10 xl:block"}>
+      <div className={"absolute right-0 hidden w-80 xl:-mt-10 xl:block animate-blob"}>
         <Image src={right} alt="full-circle" />
       </div>
     </div>
