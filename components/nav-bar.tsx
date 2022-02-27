@@ -7,7 +7,7 @@ import Link from "next/link";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="z-50 flex flex-wrap justify-between px-8 py-5 bg-transparent ">
+    <nav className="z-50 flex flex-wrap justify-between px-8 py-5 ">
       <div className="">
         <Image src={mZARLogo} alt={"Mesh mZAR token icon"} priority></Image>
       </div>
@@ -15,7 +15,7 @@ export const Navbar = () => {
         <button
           aria-label="Open Menu"
           title="Open Menu"
-          className="p-2 -mr-1 transition duration-200 rounded focus:shadow-outline hover:bg-primary focus:bg-primary focus:outline-none "
+          className="p-2 -mr-1 transition duration-200 rounded hover:bg-primary focus:bg-primary focus:outline-none "
           onClick={() => setIsMenuOpen(true)}
         >
           <svg
@@ -44,14 +44,14 @@ export const Navbar = () => {
           </svg>
         </button>
         {isMenuOpen && (
-          <div className={"absolute z-50 top-0 left-0 w-full"}>
-            <div className={"rounded border bg-white opacity-20 p-5 shadow-sm"}>
+          <div className={"absolute z-50 top-0 right-0 w-full"}>
+            <div className={"rounded border mesh-gradient p-5 shadow-sm"}>
               <div className={"flex items-center justify-between"}>
                 <div>
                   <button
                     aria-label="Close Menu"
                     title="Close Menu"
-                    className="focus:shadow-outline -mt-2 -mr-2 rounded p-2 transition duration-200 hover:bg-[#DE1B55] focus:bg-gray-200 focus:outline-none"
+                    className=" -mt-2 -mr-2 rounded p-2 transition duration-200 hover:bg-[#DE1B55]  focus:outline-none"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <svg className="w-5 text-black" viewBox="0 0 24 24">
@@ -69,13 +69,13 @@ export const Navbar = () => {
                   "sm:text-s items-center justify-center text-center md:text-lg"
                 }
               >
-                <ul className="space-y-4 align-middle hover:text-[#DE1B55]">
-                  <li>
+                <ul className="space-y-4 align-middle text-white hover:text-[#DE1B55]">
+                  <li className="text-white">
                     <Link href="#about">
                       <a
                         aria-label="What is Mzar?"
                         title="What is Mzar"
-                        className="tracking-wide text-[#55517B] transition-colors duration-200 hover:text-[#DE1B55]"
+                        className="tracking-wide text-white  transition-colors duration-200 hover:text-[#DE1B55]"
                       >
                         What is Mzar?
                       </a>
@@ -86,7 +86,7 @@ export const Navbar = () => {
                       <a
                         aria-label="Asset Metadata"
                         title="Asset Metadata"
-                        className=" tracking-wide text-[#55517B] transition-colors duration-200 hover:text-[#DE1B55] "
+                        className=" tracking-wide transition-colors duration-200 hover:text-[#DE1B55] "
                       >
                         Asset Metadata
                       </a>
@@ -97,7 +97,7 @@ export const Navbar = () => {
                       <a
                         aria-label="Buy Mzar Now"
                         title="Buy Mzar Now"
-                        className=" tracking-wide text-[#55517B] transition-colors duration-200 hover:text-[#DE1B55]"
+                        className=" tracking-wide text-white transition-colors duration-200 hover:text-[#DE1B55]"
                       >
                         Buy Mzar Now
                       </a>
