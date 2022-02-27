@@ -15,7 +15,7 @@ export const About = () => {
       </div> */}
       <div
         className={
-          "  w-64 md:w-[380px]  lg:absolute lg:pt-5  lg:w-[500px] animate-blob  5xl:w-[700px] "
+          "  w-64 md:w-[380px]  lg:absolute lg:pt-5  lg:w-[500px]  5xl:w-[700px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
