@@ -14,4 +14,16 @@
       )
       0% 0% no-repeat padding-box;
   }
+
+  .mesh-secondary-gradient {
+    background: transparent
+      linear-gradient(
+        132deg,
+        #d7295f 0%,
+        #4d4b6c 39%,
+        #212121 90%
+
+      )
+      0% 0% no-repeat padding-box;
+  }
 }
