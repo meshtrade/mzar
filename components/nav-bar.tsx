@@ -7,7 +7,7 @@ import Link from "next/link";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="flex flex-wrap justify-between px-8 py-5 bg-transparent ">
+    <nav className="z-50 flex flex-wrap justify-between px-8 py-5 bg-transparent ">
       <div className="">
         <Image src={mZARLogo} alt={"Mesh mZAR token icon"} priority></Image>
       </div>
@@ -44,8 +44,8 @@ export const Navbar = () => {
           </svg>
         </button>
         {isMenuOpen && (
-          <div className={"absolute top-0 left-0 w-full"}>
-            <div className={"rounded border bg-white p-5 shadow-sm"}>
+          <div className={"absolute z-50 top-0 left-0 w-full"}>
+            <div className={"rounded border bg-white opacity-20 p-5 shadow-sm"}>
               <div className={"flex items-center justify-between"}>
                 <div>
                   <button
