@@ -16,7 +16,7 @@ export const Metadata = (props: MetaDataProps) => {
     <div
       id="asset-metadata"
       className={
-        "2xl:-mt-40 mb-24 -mt-10 flex items-center justify-center px-10 lg:-mt-32 lg:px-0 xl:-mt-52 "
+        "2xl:-mt-40 mb-24 -mt-36 md:-mt-40 flex items-center justify-center px-10 lg:-mt-32 lg:px-0 xl:-mt-52 "
       }
     >
       <div></div>
@@ -114,6 +114,7 @@ export const Metadata = (props: MetaDataProps) => {
                 <a
                   href={`mailto:${props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "hello@mesh.trade"}`}
                   className="cursor-pointer font-roboto  text-lg  font-normal  text-[#30B0B0] hover:text-[#30B0B0]"
+                  target="_blank"
                 >{props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "hello@mesh.trade"}</a>
               </div>
             </Tab.Panel>
