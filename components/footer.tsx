@@ -33,7 +33,7 @@ export const Footer = () => {
         <div className={"text-xs font-bold"}>
           <ul
             className={
-              "flex-wrap grid gap-7 text-center text-[#171433]  lg:flex lg:text-left  xl:pt-2"
+              "flex-wrap grid gap-4 text-center text-[#171433]  lg:flex lg:text-left  xl:pt-2"
             }
           >
             <li className={"hover:text-[#DE1B55]"}>
