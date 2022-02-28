@@ -3,11 +3,11 @@ import Head from "next/head";
 import { About } from "../components/about";
 import { Hero } from "../components/hero";
 import { Navbar } from "../components/nav-bar";
-import { Mesh } from "../components/mesh";
 import Footer from "../components/footer";
 import Metadata from "../components/metadata";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Stellar, StellarTOML } from "../lib/stellar";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const Home: NextPage = () => {
   const [toml, setToml] = useState<StellarTOML>();
@@ -23,6 +23,11 @@ const Home: NextPage = () => {
       console.error(e);
     }
   }, []);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const entry = useIntersectionObserver(ref, { threshold: 0.3 });
+  const isVisible = !!entry?.isIntersecting;
+
+  console.log(`Render Section `, { isVisible });
 
   return (
     <div>
@@ -35,10 +40,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Navbar />
+      <Navbar className={!isVisible ? " mesh-secondary-gradient" : ""} />
       <main>
-        <Hero />
-        <Mesh />
+        <div ref={ref}>
+          <Hero />
+        </div>
+        <div></div>
         <About />
         <Metadata
           currency={toml?.CURRENCIES[0]}

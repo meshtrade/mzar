@@ -1,18 +1,109 @@
 //import type { NextPage } from "next";
 import Image from "next/image";
-import mZARLogo from "../images/mzar-logo.png";
-import React, { useState } from "react";
+import mZARLogo from "../images/mzar-logo.svg";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 
-export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+import { Menu } from "@headlessui/react";
+
+import cn from "classnames";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
+
+export interface NavbarProps {
+  className?: string;
+}
+
+export const Navbar = (props:NavbarProps) => {
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // const ref = useRef<HTMLDivElement | null>(null)
+  // const entry = useIntersectionObserver(ref, {})
+  // const isVisible = !!entry?.isIntersecting
+
+  // console.log(`Render Section `, { isVisible })
   return (
-    <nav className="z-50 flex flex-wrap justify-between px-8 py-5 ">
-      <div className="">
-        <Image src={mZARLogo} alt={"Mesh mZAR token icon"} priority></Image>
+    <nav className={cn (props.className,"fixed z-10 flex flex-wrap justify-between w-full px-8 py-5 ")}>
+      <div className="flex items-center gap-4 text-xl font-semibold text-white font-poppins ">
+        <Image
+          src={mZARLogo}
+          alt={"Mesh mZAR token icon"}
+          priority
+          width={30}
+          height={30}
+        ></Image>
+        <h2>mZAR</h2>
       </div>
-      <div className={"justify-items-end"}>
-        <button
+      {/* <div className={"justify-items-end "}> */}
+      <Menu>
+        <Menu.Button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <g id="ic_menu_24px" transform="translate(-8929 165)">
+              <rect
+                id="Rectangle_3694"
+                data-name="Rectangle 3694"
+                width="24"
+                height="24"
+                transform="translate(8929 -165)"
+                fill="none"
+              />
+              <path
+                id="ic_menu_24px-2"
+                data-name="ic_menu_24px"
+                d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z"
+                transform="translate(8929 -165)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+        </Menu.Button>
+        <Menu.Items
+          className={
+            "mt-8 mb-4 grid  w-full gap-2  space-y-5 align-middle text-white hover:text-[#DE1B55]"
+          }
+        >
+          <Menu.Item>
+            {({ active }) => (
+              <Link href="#about">
+                <a
+                  aria-label="What is Mzar?"
+                  title="What is Mzar"
+                  className="tracking-wide text-white  transition-colors duration-200 hover:text-[#DE1B55]"
+                >
+                  What is Mzar?
+                </a>
+              </Link>
+            )}
+          </Menu.Item>
+          <Menu.Item>
+            {({ active }) => (
+              <a
+                className={`${active && "bg-blue-500"}`}
+                href="/account-settings"
+              >
+                Asset Metadata
+              </a>
+            )}
+          </Menu.Item>
+
+          <Menu.Item>
+            {({ active }) => (
+              <a
+                className={`${active && "bg-blue-500"}`}
+                href="/account-settings"
+              >
+                Buy Mzar Now
+              </a>
+            )}
+          </Menu.Item>
+        </Menu.Items>
+      </Menu>
+
+      {/* <button
           aria-label="Open Menu"
           title="Open Menu"
           className="p-2 -mr-1 transition duration-200 rounded hover:bg-primary focus:bg-primary focus:outline-none "
@@ -42,12 +133,12 @@ export const Navbar = () => {
               />
             </g>
           </svg>
-        </button>
-        {isMenuOpen && (
-          <div className={"absolute z-50 top-0 right-0 w-full"}>
-            <div className={"mesh-secondary-gradient shadow-xl p-5 "}>
-              <div className={"flex items-center justify-between"}>
-                <div>
+        </button> */}
+      {/* {isMenuOpen && (
+          <div className={"absolute top-0 right-0 z-50 w-full "}>
+            <div className={"mesh-secondary-gradient p-5 shadow-xl "}>
+              <div className={"flex place-content-end bg-slate-400"}>
+                <div className="self-end bg-red-500">
                   <button
                     aria-label="Close Menu"
                     title="Close Menu"
@@ -104,15 +195,14 @@ export const Navbar = () => {
                     </Link>
                   </li>
                 </ul>
-                {/* Social Icons */}
+                {/* Social Icons }
               </nav>
             </div>
           </div>
-        )}
-      </div>
+        )} */}
+      {/* </div> */}
     </nav>
   );
 };
-
 
 export default Navbar;

@@ -5,7 +5,7 @@ import design from "../images/left-design.png";
 
 export const About = () => {
   return (
-    <div id="about" className={"py-10 pb-20"}>
+    <div id="about" className={"my-32 pb-20"}>
       {/* <div
         className={
           " inset-y-0 -left-12 mt-9 w-64 md:w-[400px] lg:w-[500px] xl:w-[550px] 2xl:w-[50%]"
@@ -15,7 +15,7 @@ export const About = () => {
       </div> */}
       <div
         className={
-          "  w-64 md:w-[380px] -ml-10 animate-blob  lg:absolute lg:pt-5  pt-4 lg:w-[500px]  5xl:w-[700px] "
+          "  w-60 md:w-[380px] -ml-10 animate-blob  lg:absolute lg:pt-5  pt-14 lg:w-[500px]  5xl:w-[700px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />

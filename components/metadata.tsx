@@ -27,7 +27,7 @@ export const Metadata = (props: MetaDataProps) => {
               " pb-8 text-center font-poppins  text-4xl text-[#DE1B55]  lg:pb-0"
             }
           >
-            <h2 className="font-light">
+            <h2 className="text-2xl font-light">
               Asset<strong className="pl-2 font-bold">Metadata</strong>
             </h2>
           </div>
