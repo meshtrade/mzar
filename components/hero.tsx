@@ -22,7 +22,7 @@ export const Hero = (props: HeroProps) => {
             <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow"></div>
 
             {/* FEATURE BACKGROUND IMAGE */}
-            <div className="absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:scale-[3.3] sm:-translate-x-10 sm:translate-y-14 md:-translate-x-34 md:scale-[3] md:translate-y-28  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:scale-[1.5] 2xl:translate-y-50 3xl:scale-[1.4]   3xl:translate-y-[27%] 3xl:translate-x-36 4xl:scale-[1.4]  4xl:translate-x-20 4xl:translate-y-[26%] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
+            <div className="absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:scale-[3.3] sm:-translate-x-10 sm:translate-y-14 md:-translate-x-34 md:scale-[3] md:translate-y-28  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:scale-[1.4] 2xl:translate-y-64 3xl:scale-[1.4]   3xl:translate-y-[27%] 3xl:translate-x-36 4xl:scale-[1.4]  4xl:translate-x-20 4xl:translate-y-[26%] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
               <Image
                 src={Creative}
                 alt={"Mesh mZAR loop design"}
