@@ -35,7 +35,7 @@ export const Metadata = (props: MetaDataProps) => {
         <Tab.Group>
           <Tab.List
             className={
-              " flex  flex-wrap justify-between border-b border-primary  py-2 font-medium sm:mx-40 md:mx-64 lg:mx-32 2xl:mx-36 "
+              " flex  flex-wrap justify-between border-b border-primary  py-2 font-medium mx-14 sm:mx-40 md:mx-56 lg:mx-36  "
             }
           >
             <Tab
@@ -211,7 +211,7 @@ export const Metadata = (props: MetaDataProps) => {
                     href={`https://stellar.expert/explorer/public/account/${props.issuerAddress}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=""
+                    className="text-secondary hover:underline"
                   >
                     {props.issuerAddress ?? "-"}
                     <svg
