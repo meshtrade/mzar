@@ -34,10 +34,10 @@ export const Hero = () => {
         <div>
           <h1
             className={
-              "  text-center text-3xl font-semibold text-white md:text-4xl lg:text-left"
+              "  text-center text-3xl font-semibold text-white md:text-4xl xl:text-5xl lg:text-left 2xl:text-6xl"
             }
           >
-            <a href="https://mesh.trade">Meet mZAR.</a>
+            Meet mZAR.
           </h1>
           <p className="text-lg text-center text-white md:text-xl lg:pr-10 lg:text-left">
             A stablecoin to bridge the gap between TradFi and DeFi.
@@ -68,7 +68,13 @@ export const Hero = () => {
         </div>
         <div id="buy-mzar" className="grid pt-4 place-content-center lg:pt-0">
           <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-secondary px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
-            <a href="https://app.mesh.trade/sign-up">Buy mZAR NOW</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://app.mesh.trade/sign-up"
+            >
+              Buy mZAR NOW
+            </a>
           </button>
         </div>
       </div>

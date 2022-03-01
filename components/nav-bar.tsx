@@ -83,6 +83,8 @@ export const Navbar = (props: NavbarProps) => {
                   <a
                     className={"hover:text-primary"}
                     href="https://app.mesh.trade/sign-up"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Buy mZAR Now
                   </a>
