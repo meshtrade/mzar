@@ -117,8 +117,6 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <a
                   href={`mailto:${props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "hello@mesh.trade"}`}
-                  className="cursor-pointer font-roboto  text-lg  font-normal  text-[#30B0B0] hover:text-[#30B0B0]"
-                  target="_blank"
                 >{props.orgDocumentation?.ORG_OFFICIAL_EMAIL ?? "hello@mesh.trade"}</a>
               </div>
             </Tab.Panel>
@@ -152,7 +150,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "flex-wrap text-center lg:w-full lg:pr-4 text-right text-lg font-bold text-[#DE1B55] "
+                    "flex-wrap text-center lg:w-full lg:pr-4 lg:text-right text-lg font-bold text-[#DE1B55] "
                   }
                 >
                   Issuer Address
@@ -232,7 +230,6 @@ export const Metadata = (props: MetaDataProps) => {
                 <a
                   className="text-lg font-normal tracking-wide text-center md:text-left text-[#30B0B0] underline decoration-2 underline-offset-2"
                   href={props.currency?.attestation_of_reserve ?? "#"}
-                  target="_blank"
                   rel="nofollow noreferrer"
                 >
                   {props.currency?.attestation_of_reserve ?? "-"}

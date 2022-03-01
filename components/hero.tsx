@@ -82,7 +82,7 @@ export const Hero = (props: HeroProps) => {
         </div>
         <div id="buy-mzar" className="grid pt-4 place-content-center lg:pt-0">
           <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-[#30B0B0] px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
-         <a href="https://app.mesh.trade/sign-up" target="_blank">Buy mZAR NOW</a>   
+         <a href="https://app.mesh.trade/sign-up" >Buy mZAR NOW</a>   
           </button>
         </div>
       </div>
