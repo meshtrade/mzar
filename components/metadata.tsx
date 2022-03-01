@@ -35,7 +35,7 @@ export const Metadata = (props: MetaDataProps) => {
         <Tab.Group>
           <Tab.List
             className={
-              " flex  flex-wrap justify-between border-b border-primary  py-2 font-medium sm:mx-40 md:mx-64 lg:mx-32 2xl:mx-28 "
+              " flex  flex-wrap justify-between border-b border-primary  py-2 font-medium sm:mx-40 md:mx-64 lg:mx-32 2xl:mx-36 "
             }
           >
             <Tab
