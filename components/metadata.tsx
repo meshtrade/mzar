@@ -41,8 +41,8 @@ export const Metadata = (props: MetaDataProps) => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? " font-poppins  text-sm  tracking-wide text-primary underline decoration-2 underline-offset-[11px] focus:outline-none "
-                  : " font-poppins text-sm font-medium tracking-wide text-text text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
+                  ? " font-poppins  text-sm font-medium tracking-wide text-primary underline decoration-2 underline-offset-[11px] focus:outline-none "
+                  : " font-poppins text-sm font-medium tracking-wide text-text text-opacity-30 "
               }
             >
               ORGANIZATION METADATA
@@ -50,8 +50,8 @@ export const Metadata = (props: MetaDataProps) => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? " font-poppins  text-sm  tracking-wide text-primary underline decoration-2 underline-offset-[11px] focus:outline-none "
-                  : " font-poppins text-sm font-medium tracking-wide text-text text-opacity-30 dark:text-[#707070] dark:text-opacity-40"
+                  ? " font-poppins  text-sm font-medium tracking-wide text-primary underline decoration-2 underline-offset-[11px] focus:outline-none "
+                  : " font-poppins text-sm font-medium tracking-wide text-text text-opacity-30"
               }
             >
               CURRENCY
@@ -131,7 +131,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "cursor-pointer font-roboto text-lg font-normal  text-[#30B0B0]"
+                    "cursor-pointer font-roboto text-lg font-normal  text-secondary"
                   }
                 >
                   <a
@@ -184,7 +184,7 @@ export const Metadata = (props: MetaDataProps) => {
               >
                 <p
                   className={
-                    " text-right  text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    " text-right  text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Asset Code
@@ -194,7 +194,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "flex-wrap text-center text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4 lg:text-right "
+                    "flex-wrap text-center text-lg font-bold text-primary lg:w-full lg:pr-4 lg:text-right "
                   }
                 >
                   Issuer Address
@@ -215,7 +215,7 @@ export const Metadata = (props: MetaDataProps) => {
 
                 <p
                   className={
-                    " text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    " text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Friendly Name
@@ -229,7 +229,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    " text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    " text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Description
@@ -243,7 +243,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    " text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    " text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Anchored Asset
@@ -258,7 +258,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    " text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    " text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Anchored Asset Type
@@ -272,7 +272,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    "text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Anchor Asset
@@ -286,7 +286,7 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    "text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Redemption Instructions
@@ -300,13 +300,13 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "text-right text-lg font-bold text-[#DE1B55] lg:w-full lg:pr-4"
+                    "text-right text-lg font-bold text-primary lg:w-full lg:pr-4"
                   }
                 >
                   Attestation_of_reserve
                 </p>
                 <a
-                  className="text-center text-lg font-normal tracking-wide text-[#30B0B0] underline decoration-2 underline-offset-2 md:text-left"
+                  className="text-lg font-normal tracking-wide text-center underline text-secondary decoration-2 underline-offset-2 md:text-left"
                   href={props.currency?.attestation_of_reserve ?? "#"}
                   rel="nofollow noreferrer"
                 >

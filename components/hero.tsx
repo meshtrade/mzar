@@ -17,7 +17,7 @@ export const Hero = (props: HeroProps) => {
       {/* BACKGROUND GRAPHICS + TRUSTED BY SECTION */}
       <div className="absolute inset-0 w-full h-screen -z-10 ">
         <div className="grid h-full w-full  lg:grid-rows-[1fr_auto]">
-          <div className="relative w-full overflow-hidden bg-red-400 -z-10">
+          <div className="relative w-full overflow-hidden -z-10">
             {/* GRADIENT BACKGROUND */}
             <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow"></div>
 
@@ -81,7 +81,7 @@ export const Hero = (props: HeroProps) => {
           </p>
         </div>
         <div id="buy-mzar" className="grid pt-4 place-content-center lg:pt-0">
-          <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-[#30B0B0] px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
+          <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-secondary px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
          <a href="https://app.mesh.trade/sign-up" >Buy mZAR NOW</a>   
           </button>
         </div>
