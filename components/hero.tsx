@@ -18,15 +18,15 @@ export const Hero = (props: HeroProps) => {
       <div className="absolute inset-0 w-full h-screen -z-10 ">
         <div className="grid h-full w-full  lg:grid-rows-[1fr_auto]">
           <div className="relative w-full overflow-hidden bg-red-400 -z-10">
-            {/* GRADIENT BACKGROUNDD */}
+            {/* GRADIENT BACKGROUND */}
             <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow"></div>
 
             {/* FEATURE BACKGROUND IMAGE */}
-            <div className="absolute bottom-0 -translate-x-20 translate-y-7 scale-[4] sm:-translate-x-32 sm:translate-y-12 md:-translate-x-40 md:scale-[3] md:translate-y-20  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-8 xl:-translate-y-[88%] xl:scale-[1.6] 2xl:scale-[1.5] 3xl:-translate-y-[80%] 3xl:scale-[1.4] 4xl:-translate-y-[75%] 4xl:translate-x-11 4xl:scale-[1.3] 5xl:translate-x-40 5xl:-translate-y-0 5xl:scale-[1.4]">
+            <div className="absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:scale-[3.3] sm:-translate-x-10 sm:translate-y-14 md:-translate-x-34 md:scale-[3] md:translate-y-28  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:scale-[1.5] 2xl:translate-y-50 3xl:scale-[1.4]   3xl:translate-y-[27%] 3xl:translate-x-36 4xl:scale-[1.4]  4xl:translate-x-20 4xl:translate-y-[26%] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
               <Image
                 src={Creative}
                 alt={"Mesh mZAR loop design"}
-                className={"rotate-14"}
+                className={"rotate-[-5deg]"}
                 priority
                 quality={50}
                 // width={400}
@@ -44,7 +44,7 @@ export const Hero = (props: HeroProps) => {
       </div>
 
       {/* HERO BANNER CONTENT */}
-      <div className="grid w-full gap-8 px-10 mt-8 tracking-wide md:mt-0 md:gap-18 md:px-32 lg:px-20 font-poppins lg:col-span-2 lg:mx-0 lg:justify-items-start">
+      <div className="grid w-full gap-8 px-10 mt-8 tracking-wide sm:px-24 lg:-mt-20 md:mt-0 md:gap-18 md:px-28 xl:px-32 lg:px-20 font-poppins lg:col-span-2 lg:mx-0 lg:justify-items-start">
         <div>
           <h1
             className={
