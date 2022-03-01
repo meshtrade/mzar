@@ -137,6 +137,7 @@ export const Metadata = (props: MetaDataProps) => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
+                    className=" hover:underline"
                     href={`https://mobile.twitter.com/${props.orgDocumentation?.ORG_TWITTER}`}
                   >
                     {props.orgDocumentation?.ORG_TWITTER ?? "-"}
@@ -154,7 +155,9 @@ export const Metadata = (props: MetaDataProps) => {
                     props.orgDocumentation?.ORG_OFFICIAL_EMAIL ??
                     "hello@mesh.trade"
                   }`}
-                  className={"text-lg text-secondary"}
+                  className={"text-lg text-secondary  hover:underline"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {props.orgDocumentation?.ORG_OFFICIAL_EMAIL ??
                     "hello@mesh.trade"}
@@ -201,15 +204,25 @@ export const Metadata = (props: MetaDataProps) => {
                 </p>
                 <p
                   className={
-                    "break-all text-center  font-roboto text-lg font-normal text-text hover:text-secondary lg:text-left"
+                    " break-all text-center font-roboto text-lg font-normal text-text hover:text-secondary lg:text-left"
                   }
                 >
                   <a
                     href={`https://stellar.expert/explorer/public/account/${props.issuerAddress}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className=""
                   >
                     {props.issuerAddress ?? "-"}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="inline-block w-5 h-5 "
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                    </svg>
                   </a>
                 </p>
 
@@ -306,9 +319,10 @@ export const Metadata = (props: MetaDataProps) => {
                   Attestation_of_reserve
                 </p>
                 <a
-                  className="text-lg font-normal tracking-wide text-center underline text-secondary decoration-2 underline-offset-2 md:text-left"
+                  className="text-lg font-normal tracking-wide text-center text-secondary decoration-2 underline-offset-2 hover:underline md:text-left"
                   href={props.currency?.attestation_of_reserve ?? "#"}
-                  rel="nofollow noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {props.currency?.attestation_of_reserve ?? "-"}
                 </a>
