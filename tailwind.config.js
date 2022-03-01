@@ -4,7 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
+
     extend: {
       animation: {
         blob: "blob 7s infinite"
@@ -34,6 +34,9 @@ module.exports = {
         '4xl': '2000px',
         '5xl': '2300px',
       },
+      colors: {
+        'primary': "#DE1B55"
+      }
     },
   },
   plugins: [

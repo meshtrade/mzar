@@ -5,7 +5,7 @@ import design from "../images/left-design.png";
 
 export const About = () => {
   return (
-    <div id="about" className={"py-10 pb-20"}>
+    <div id="about" className={"my-32 pb-20"}>
       {/* <div
         className={
           " inset-y-0 -left-12 mt-9 w-64 md:w-[400px] lg:w-[500px] xl:w-[550px] 2xl:w-[50%]"
@@ -15,14 +15,14 @@ export const About = () => {
       </div> */}
       <div
         className={
-          "  w-64 md:w-[380px] -ml-10 animate-blob  lg:absolute lg:pt-5  pt-4 lg:w-[500px]  5xl:w-[700px] "
+          "  -ml-10 w-60 animate-blob pt-12 sm:w-[390px]  sm:pt-20 md:w-[380px] lg:absolute  lg:w-[500px] 2xl:w-[550px] lg:pt-44  4xl:w-[700px] 5xl:w-[800px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
       </div>
       <div
         className={
-          "2xl:py-30 -mt-32  px-8 md:-mt-28  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
+          "2xl:py-30 -mt-32  px-8 md:-mt-36  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
         }
       >
         <h1
@@ -48,8 +48,8 @@ export const About = () => {
 
         <div className={"grid lg:grid-cols-4"}>
           <div></div>
-          <div className={""}></div>
-          <div className={"col-span-2 lg:pr-60"}>
+          <div ></div>
+          <div className={"col-span-2 lg:pr-32"}>
             <p
               className={
                 "flex py-2 pt-4 font-roboto  text-lg font-normal text-[#55517B] "

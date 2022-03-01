@@ -1,42 +1,60 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 import Image from "next/image";
 import mZAR from "../images/mZAR-coin.png";
 import Creative from "../images/mesh-creative.png";
+import { TrustedBySection } from "./trusted-by-section";
 
-export const Hero = () => {
+export interface HeroProps {
+  // ref: MutableRefObject<HTMLDivElement | null>;
+}
+
+export const Hero = (props: HeroProps) => {
   return (
-    <div className="grid h-screen px-10 place-content-center font-poppins md:px-20 lg:grid-cols-4">
-      <div className="absolute inset-0 w-screen h-screen overflow-hidden -z-10">
-        <div className="absolute top-0 h-screen mesh-gradient -left-36 w-overflow"></div>
+    <div
+      // ref={props.ref}
+      className="grid w-full h-screen place-content-center font-poppins lg:grid-cols-4"
+    >
+      {/* BACKGROUND GRAPHICS + TRUSTED BY SECTION */}
+      <div className="absolute inset-0 w-full h-screen -z-10 ">
+        <div className="grid h-full w-full  lg:grid-rows-[1fr_auto]">
+          <div className="relative w-full overflow-hidden bg-red-400 -z-10">
+            {/* GRADIENT BACKGROUND */}
+            <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow"></div>
 
-        {/* FEATURE BACKGROUND IMAGE */}
-
-        <div className="absolute top-full -translate-x-[35%] -translate-y-[100%]  scale-[4.9] sm:-translate-x-1 sm:-translate-y-[80%] sm:scale-[3]  md:translate-x-10 md:-translate-y-[85%] md:scale-[2] lg:translate-x-2 lg:-translate-y-[98%] lg:scale-[1.8] xl:translate-x-8 xl:-translate-y-[88%] xl:scale-[1.6] 2xl:scale-[1.5] 3xl:scale-[1.4] 3xl:-translate-y-[80%] 4xl:scale-[1.3] 4xl:-translate-y-[75%] 4xl:translate-x-11 5xl:scale-[1.4] 5xl:translate-x-40 5xl:-translate-y-[75%]">
-          <Image
-            src={Creative}
-            alt={"Mesh mZAR loop design"}
-            className={"rotate-14 "}
-            priority
-            quality={20}
-            // width={400}
-            // height={100}
-          ></Image>
+            {/* FEATURE BACKGROUND IMAGE */}
+            <div className="absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:scale-[3.3] sm:-translate-x-10 sm:translate-y-14 md:-translate-x-34 md:scale-[3] md:translate-y-28  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:scale-[1.5] 2xl:translate-y-50 3xl:scale-[1.4]   3xl:translate-y-[27%] 3xl:translate-x-36 4xl:scale-[1.4]  4xl:translate-x-20 4xl:translate-y-[26%] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
+              <Image
+                src={Creative}
+                alt={"Mesh mZAR loop design"}
+                className={"rotate-[-5deg]"}
+                priority
+                quality={50}
+                // width={400}
+                // height={100}
+              ></Image>
+            </div>
+          </div>
+          <div className="hidden w-full lg:block ">
+            <TrustedBySection />
+          </div>
+        </div>
+        <div className="w-full lg:hidden ">
+          <TrustedBySection />
         </div>
       </div>
 
       {/* HERO BANNER CONTENT */}
-
-      <div className="grid gap-8 -mt-24 tracking-wide font-poppins md:gap-10 lg:col-span-2 lg:mx-20 lg:-mt-32 lg:justify-items-start">
+      <div className="grid w-full gap-8 px-10 mt-8 tracking-wide sm:px-24 lg:-mt-20 md:mt-0 md:gap-18 md:px-28 xl:px-32 lg:px-20 font-poppins lg:col-span-2 lg:mx-0 lg:justify-items-start">
         <div>
           <h1
             className={
-              "  text-center text-3xl font-semibold text-white md:text-5xl lg:text-left"
+              "  text-center text-3xl font-semibold text-white md:text-4xl lg:text-left"
             }
           >
             <a href="https://mesh.trade">Meet mZAR.</a>
           </h1>
-          <p className="text-lg text-center text-white md:text-2xl lg:pr-10 lg:text-left">
-            A stablecoin to bridge the gap between TradFi and Defi.
+          <p className="text-lg text-center text-white md:text-xl lg:pr-10 lg:text-left">
+            A stablecoin to bridge the gap between TradFi and DeFi.
           </p>
         </div>
         <div className="grid place-content-center lg:hidden">
@@ -44,8 +62,8 @@ export const Hero = () => {
             src={mZAR}
             alt={"Mesh mZAR token icon"}
             priority
-            width={137}
-            height={137}
+            width={130}
+            height={130}
           ></Image>
         </div>
         <div>
@@ -62,9 +80,9 @@ export const Hero = () => {
             Everyone is invited.
           </p>
         </div>
-        <div id="buy-mzar" className="grid pt-5 place-content-center lg:pt-0">
-          <button className="text-md grid h-12 place-content-center rounded-md bg-[#30B0B0] hover:bg-[#2CA0A0] px-10 font-poppins  text-white shadow-xl md:text-lg">
-            Buy mZAR NOW
+        <div id="buy-mzar" className="grid pt-4 place-content-center lg:pt-0">
+          <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-[#30B0B0] px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
+         <a href="https://app.mesh.trade/sign-up" target="_blank">Buy mZAR NOW</a>   
           </button>
         </div>
       </div>
@@ -77,7 +95,6 @@ export const Hero = () => {
           <Image src={mZAR} alt={"Mesh mZAR token icon"} priority></Image>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
