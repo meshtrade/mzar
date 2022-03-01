@@ -27,8 +27,6 @@ const Home: NextPage = () => {
   const entry = useIntersectionObserver(ref, { threshold: 0.3 });
   const isVisible = !!entry?.isIntersecting;
 
-  console.log(`Render Section `, { isVisible });
-
   return (
     <div>
       <Head>

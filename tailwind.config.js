@@ -35,7 +35,9 @@ module.exports = {
         '5xl': '2300px',
       },
       colors: {
-        'primary': "#DE1B55"
+        'primary': "#DE1B55",
+        'secondary' : "#30B0B0",
+        'text' : "#55517B"
       }
     },
   },

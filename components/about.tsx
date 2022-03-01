@@ -15,7 +15,7 @@ export const About = () => {
       </div> */}
       <div
         className={
-          "  -ml-10 w-60 animate-blob pt-12 sm:w-[390px]  sm:pt-20 md:w-[380px] lg:absolute  lg:w-[500px] 2xl:w-[550px] lg:pt-44  4xl:w-[700px] 5xl:w-[800px] "
+          "  -ml-10 w-60 animate-blob pt-12 sm:w-[390px]  sm:pt-20 md:w-[380px] lg:absolute  lg:w-[500px] lg:pt-44 2xl:w-[550px]  4xl:w-[700px] 5xl:w-[800px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
@@ -27,7 +27,7 @@ export const About = () => {
       >
         <h1
           className={
-            "flex  justify-center py-8 pb-4 text-4xl font-bold tracking-wide text-[#DE1B55] lg:justify-center"
+            "flex  justify-center py-8 pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
           }
         >
           About
@@ -36,7 +36,7 @@ export const About = () => {
         <div className={"flex justify-center lg:justify-center"}>
           <div
             className={
-              " flex justify-center pb-8 text-2xl font-light text-[#DE1B55]   lg:justify-center"
+              " flex justify-center pb-8 text-2xl font-light text-primary   lg:justify-center"
             }
           >
             <p>
@@ -48,11 +48,11 @@ export const About = () => {
 
         <div className={"grid lg:grid-cols-4"}>
           <div></div>
-          <div ></div>
+          <div></div>
           <div className={"col-span-2 lg:pr-32"}>
             <p
               className={
-                "flex py-2 pt-4 font-roboto  text-lg font-normal text-[#55517B] "
+                "flex py-2 pt-4 font-roboto  text-lg font-normal text-text "
               }
             >
               We have created mZAR to bridge the gap between TradFi and DeFi, to
@@ -61,7 +61,7 @@ export const About = () => {
             </p>
             <p
               className={
-                "py-2 pt-4 font-roboto text-lg font-normal text-[#55517B] "
+                "text-text py-2 pt-4 font-roboto text-lg font-normal "
               }
             >
               mZAR is a fully collaterized South African ZAR stablecoin, based
