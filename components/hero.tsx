@@ -34,7 +34,7 @@ export const Hero = () => {
         <div>
           <h1
             className={
-              "  text-center text-3xl font-semibold text-white md:text-4xl xl:text-5xl lg:text-left 2xl:text-6xl"
+              "  text-center text-3xl font-semibold text-white md:text-4xl xl:text-5xl lg:text-left 2xl:text-5xl"
             }
           >
             Meet mZAR.
