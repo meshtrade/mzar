@@ -6,13 +6,6 @@ import design from "../images/left-design.png";
 export const About = () => {
   return (
     <div id="about" className={"my-32 pb-20"}>
-      {/* <div
-        className={
-          " inset-y-0 -left-12 mt-9 w-64 md:w-[400px] lg:w-[500px] xl:w-[550px] 2xl:w-[50%]"
-        }
-      >
-        <Image src={design} className="" alt="Mesh-loop" />
-      </div> */}
       <div
         className={
           "  -ml-10 w-60 animate-blob pt-12 sm:w-[390px]  sm:pt-20 md:w-[380px] lg:absolute  lg:w-[500px] lg:pt-44 2xl:w-[550px]  4xl:w-[700px] 5xl:w-[800px] "
@@ -60,13 +53,11 @@ export const About = () => {
               a more transparent and open financial market.
             </p>
             <p
-              className={
-                "text-text py-2 pt-4 font-roboto text-lg font-normal "
-              }
+              className={"py-2 pt-4 font-roboto text-lg font-normal text-text "}
             >
               mZAR is a fully collaterized South African ZAR stablecoin, based
               on the open fiat stablecoin framework of Mesh. mZAR is fully
-              reedemable for ZAR held in an account managed by Mesh.{" "}
+              reedemable for ZAR held in an account managed by Mesh.
               <h2 className={"py-4 font-poppins text-lg font-semibold"}>
                 1 mZAR equals 1 ZAR. At all times
               </h2>

@@ -1,4 +1,3 @@
-//import type { NextPage } from "next";
 import Image from "next/image";
 import mZARLogo from "../images/mzar-logo.svg";
 import React, { useRef, useState } from "react";
@@ -7,7 +6,6 @@ import Link from "next/link";
 import { Menu } from "@headlessui/react";
 
 import cn from "classnames";
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 export interface NavbarProps {
   className?: string;

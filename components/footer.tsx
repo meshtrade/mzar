@@ -39,7 +39,6 @@ export const Footer = () => {
             <li className={"hover:text-[#DE1B55]"}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/PaaS/v1.0.0/MESH_PaaS_30July2021_1.4%20FINAL.pdf"
-                target="_blank"
                 rel="noreferrer"
               >
                 Platform as a Service Agreement
@@ -48,7 +47,6 @@ export const Footer = () => {
             <li className={"hover:text-[#DE1B55] "}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Authorised-User-Service/v1.0.0/3.%20MESH_Authorised%20User%20Service%20Agreement.20210730.FINAL.pdf"
-                target="_blank"
                 rel="noreferrer"
               >
                 Authorised User Service Agreement
@@ -57,7 +55,6 @@ export const Footer = () => {
             <li className={"hover:text-[#DE1B55] "}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Website-Privacy-Policy/v1.0.0/7.%20MESH_Website%20Privacy%20Policy%20Rev%203.20210730.FINAL.pdf"
-                target="_blank"
                 rel="noreferrer"
               >
                 Website Privacy Policy
@@ -66,7 +63,6 @@ export const Footer = () => {
             <li className={"hover:text-[#DE1B55] "}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Support-Services/v1.0.0/4.%20MESH_Support%20Services%20Policy.20210730.FINAL.pdf"
-                target="_blank"
                 rel="noreferrer"
               >
                 Support Services Policy
@@ -75,7 +71,6 @@ export const Footer = () => {
             <li className={"hover:text-[#DE1B55] "}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Acceptable-Use-Policy/v1.0.0/5.%20MESH_Acceptable%20Use%20Policy.20210730.FINAL%20(1).pdf"
-                target="_blank"
                 rel="noreferrer"
               >
                 Acceptable Use Policy
@@ -84,7 +79,6 @@ export const Footer = () => {
             <li className={"hover:text-[#DE1B55] "}>
               <a
                 href="https://storage.googleapis.com/mesh-terms-and-conditions-documents/Data-Protection-Policy/v1.0.0/6.%20MESH%20BV%20-%20Data%20Protection%20Policy.20200730.FINAL.pdf"
-                target="_blank"
                 rel="noreferrer"
               >
                 Data Protection Policy
@@ -99,8 +93,8 @@ export const Footer = () => {
             " mb-2 px-10 font-poppins text-xs text-center text-[#171433] dark:text-[#707070] md:py-4 md:text-center lg:text-left xl:py-2 xl:px-8 "
           }
         >
-          Copyright 2021 Mesh,Inc. All rights reserved | MESH 87 00-844
-          Netherlands Capital 100 000 PLN, NIP:5272870947{" "}
+           {`Copyright ${new Date().getFullYear()} Mesh,Inc. All rights reserved | MESH 87 00-844
+          Netherlands Capital 100 000 PLN, NIP:5272870947`}
         </p>
       </div>
     </div>

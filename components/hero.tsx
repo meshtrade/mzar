@@ -1,36 +1,23 @@
-import React, { MutableRefObject } from "react";
 import Image from "next/image";
 import mZAR from "../images/mZAR-coin.png";
 import Creative from "../images/mesh-creative.png";
 import { TrustedBySection } from "./trusted-by-section";
 
-export interface HeroProps {
-  // ref: MutableRefObject<HTMLDivElement | null>;
-}
-
-export const Hero = (props: HeroProps) => {
+export const Hero = () => {
   return (
-    <div
-      // ref={props.ref}
-      className="grid w-full h-screen place-content-center font-poppins lg:grid-cols-4"
-    >
-      {/* BACKGROUND GRAPHICS + TRUSTED BY SECTION */}
+    <div className="grid w-full h-screen place-content-center font-poppins lg:grid-cols-4">
       <div className="absolute inset-0 w-full h-screen -z-10 ">
         <div className="grid h-full w-full  lg:grid-rows-[1fr_auto]">
           <div className="relative w-full overflow-hidden -z-10">
-            {/* GRADIENT BACKGROUND */}
             <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow"></div>
 
-            {/* FEATURE BACKGROUND IMAGE */}
-            <div className="absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:scale-[3.3] sm:-translate-x-10 sm:translate-y-14 md:-translate-x-34 md:scale-[3] md:translate-y-28  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:scale-[1.4] 2xl:translate-y-64 3xl:scale-[1.4]   3xl:translate-y-[27%] 3xl:translate-x-36 4xl:scale-[1.4]  4xl:translate-x-20 4xl:translate-y-[26%] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
+            <div className="md:-translate-x-34 absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:-translate-x-10 sm:translate-y-14 sm:scale-[3.3] md:translate-y-28 md:scale-[3]  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:translate-y-64 2xl:scale-[1.4] 3xl:translate-y-[27%]   3xl:translate-x-36 3xl:scale-[1.4] 4xl:translate-x-20  4xl:translate-y-[26%] 4xl:scale-[1.4] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
               <Image
                 src={Creative}
                 alt={"Mesh mZAR loop design"}
                 className={"rotate-[-5deg]"}
                 priority
                 quality={50}
-                // width={400}
-                // height={100}
               ></Image>
             </div>
           </div>
@@ -43,8 +30,7 @@ export const Hero = (props: HeroProps) => {
         </div>
       </div>
 
-      {/* HERO BANNER CONTENT */}
-      <div className="grid w-full gap-8 px-10 mt-8 tracking-wide sm:px-24 lg:-mt-20 md:mt-0 md:gap-18 md:px-28 xl:px-32 lg:px-20 font-poppins lg:col-span-2 lg:mx-0 lg:justify-items-start">
+      <div className="grid w-full gap-8 px-10 mt-8 tracking-wide md:gap-18 font-poppins sm:px-24 md:mt-0 md:px-28 lg:col-span-2 lg:mx-0 lg:-mt-20 lg:justify-items-start lg:px-20 xl:px-32">
         <div>
           <h1
             className={
@@ -82,7 +68,7 @@ export const Hero = (props: HeroProps) => {
         </div>
         <div id="buy-mzar" className="grid pt-4 place-content-center lg:pt-0">
           <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-secondary px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
-         <a href="https://app.mesh.trade/sign-up" >Buy mZAR NOW</a>   
+            <a href="https://app.mesh.trade/sign-up">Buy mZAR NOW</a>
           </button>
         </div>
       </div>
