@@ -21,7 +21,7 @@ export const Hero = () => {
               ></Image>
             </div>
           </div>
-          <div className="hidden w-full cursor-pointer lg:block">
+          <div className="hidden w-full lg:block">
             <TrustedBySection />
           </div>
         </div>

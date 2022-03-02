@@ -21,7 +21,6 @@ export const Footer = () => {
               href="https://www.mesh.trade/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
             >
               <Image placeholder={"blur"} src={logo} alt="logo" />
             </a>
