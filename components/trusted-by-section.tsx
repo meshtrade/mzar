@@ -14,7 +14,7 @@ export const TrustedBySection = () => {
       </div>
 
       <div className={"flex items-center justify-center"}>
-        <a href="https://www.mesh.trade/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.mesh.trade/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <Image placeholder={"blur"} src={logo} alt="logo" />
         </a>
       </div>

@@ -6,26 +6,26 @@ import { TrustedBySection } from "./trusted-by-section";
 export const Hero = () => {
   return (
     <div className="grid w-full h-screen place-content-center font-poppins lg:grid-cols-4">
-      <div className="absolute inset-0 w-full h-screen -z-10 ">
+      <div className="absolute inset-0 w-full h-screen ">
         <div className="grid h-full w-full  lg:grid-rows-[1fr_auto]">
-          <div className="relative w-full overflow-hidden -z-10">
-            <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow"></div>
+          <div className="relative w-full overflow-hidden ">
+            <div className="absolute top-0 h-full mesh-gradient -left-36 w-overflow -z-10"></div>
 
-            <div className="md:-translate-x-34 absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:-translate-x-10 sm:translate-y-14 sm:scale-[3.3] md:translate-y-28 md:scale-[3]  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:translate-y-64 2xl:scale-[1.4] 3xl:translate-y-[27%]   3xl:translate-x-36 3xl:scale-[1.4] 4xl:translate-x-20  4xl:translate-y-[26%] 4xl:scale-[1.4] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
+            <div className="-z-10 md:-translate-x-34 absolute bottom-0 -translate-x-14 translate-y-10 scale-[4] sm:-translate-x-10 sm:translate-y-14 sm:scale-[3.3] md:translate-y-28 md:scale-[3]  lg:translate-x-10 lg:translate-y-10 lg:scale-[1.7] xl:translate-x-10 xl:translate-y-32  xl:scale-[1.5] 2xl:translate-y-64 2xl:scale-[1.4] 3xl:translate-y-[27%]   3xl:translate-x-36 3xl:scale-[1.4] 4xl:translate-x-20  4xl:translate-y-[26%] 4xl:scale-[1.4] 5xl:translate-x-28 5xl:translate-y-[28%] 5xl:scale-[1.3]">
               <Image
                 src={Creative}
                 alt={"Mesh mZAR loop design"}
-                className={"rotate-[-5deg]"}
+                className={"rotate-[-5deg] "}
                 priority
                 quality={50}
               ></Image>
             </div>
           </div>
-          <div className="hidden w-full lg:block ">
+          <div className="hidden w-full cursor-pointer lg:block">
             <TrustedBySection />
           </div>
         </div>
-        <div className="w-full lg:hidden ">
+        <div className="w-full lg:hidden">
           <TrustedBySection />
         </div>
       </div>
