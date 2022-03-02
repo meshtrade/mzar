@@ -16,12 +16,12 @@ export const Footer = () => {
             <p>Supported Wallets:</p>
           </div>
 
-          <div className={"z-50 flex items-center justify-center"}>
+          <div className={" flex items-center justify-center"}>
             <a
               href="https://www.mesh.trade/"
               target="_blank"
               rel="noopener noreferrer"
-              className="z-50 cursor-pointer"
+              className="cursor-pointer"
             >
               <Image placeholder={"blur"} src={logo} alt="logo" />
             </a>
