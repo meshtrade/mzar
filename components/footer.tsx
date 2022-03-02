@@ -16,10 +16,15 @@ export const Footer = () => {
             <p>Supported Wallets:</p>
           </div>
 
-          <div className={"flex items-center justify-center"}>
-            <Link href={"/"} passHref>
-              <Image src={logo} alt="logo" />
-            </Link>
+          <div className={"z-50 flex items-center justify-center"}>
+            <a
+              href="https://www.mesh.trade/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-50 cursor-pointer"
+            >
+              <Image placeholder={"blur"} src={logo} alt="logo" />
+            </a>
           </div>
         </div>
       </div>
@@ -33,7 +38,7 @@ export const Footer = () => {
         <div className={"text-xs font-bold"}>
           <ul
             className={
-              "flex-wrap grid gap-4 2xl:gap-8 text-center text-[#171433]  lg:flex lg:text-left  xl:pt-2"
+              "grid flex-wrap gap-4 text-center text-[#171433] lg:flex  lg:text-left xl:pt-2  2xl:gap-8"
             }
           >
             <li className={"hover:text-[#DE1B55]"}>
@@ -90,10 +95,10 @@ export const Footer = () => {
       <div>
         <p
           className={
-            " mb-2 px-10 font-poppins text-xs text-center text-[#171433] dark:text-[#707070] md:py-4 md:text-center lg:text-left xl:py-2 xl:px-8 "
+            " mb-2 px-10 text-center font-poppins text-xs text-[#171433] dark:text-[#707070] md:py-4 md:text-center lg:text-left xl:py-2 xl:px-8 "
           }
         >
-           {`Copyright ${new Date().getFullYear()} Mesh,Inc. All rights reserved | MESH 87 00-844
+          {`Copyright ${new Date().getFullYear()} Mesh,Inc. All rights reserved | MESH 87 00-844
           Netherlands Capital 100 000 PLN, NIP:5272870947`}
         </p>
       </div>
