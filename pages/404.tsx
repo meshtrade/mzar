@@ -54,12 +54,14 @@ export const Error = () => {
                       </Link>
 
             Or
+            <Link href="https://mesh.trade/">
             <a
               className="mx-2 font-semibold cursor-pointer text-secondary hover:underline"
-              href="https://mesh.trade/"
+              
             >
               Go to Mesh
             </a>
+            </Link>
           </p>
         </div>
       </div>
