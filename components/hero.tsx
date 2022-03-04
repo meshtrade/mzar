@@ -66,7 +66,8 @@ export const Hero = () => {
             Everyone is invited.
           </p>
         </div>
-        <div id="buy-mzar" className="grid pt-4 place-content-center lg:pt-0">
+        {/* z-20 to make button appear */}
+        <div id="buy-mzar" className="z-20 grid pt-4 place-content-center lg:pt-0">
           <button className="text-md grid h-12 cursor-pointer place-content-center rounded-md bg-secondary px-10 font-poppins text-white  shadow-xl hover:bg-[#2CA0A0] md:text-lg">
             <a
               target="_blank"
