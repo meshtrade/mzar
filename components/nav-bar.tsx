@@ -16,7 +16,7 @@ export const Navbar = (props: NavbarProps) => {
     <nav
       className={cn(
         props.className,
-        "fixed z-10 flex w-full flex-wrap justify-between px-8 py-5 "
+        "fixed z-30 flex w-full flex-wrap justify-between px-8 py-5 "
       )}
     >
       <div className="z-20 flex items-center gap-4 text-xl font-semibold text-white font-poppins ">
