@@ -28,7 +28,7 @@ const Home: NextPage = () => {
   const isVisible = !!entry?.isIntersecting;
 
   return (
-    <div>
+    <div >
       <Head>
         <title>Mesh mZAR</title>
         <meta
