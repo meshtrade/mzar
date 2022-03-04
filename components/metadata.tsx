@@ -16,7 +16,7 @@ export const Metadata = (props: MetaDataProps) => {
     <div
       id="asset-metadata"
       className={
-        "mb-24 -mt-44 flex items-center justify-center px-10 sm:px-4 md:-mt-48 lg:-mt-56 lg:px-0 xl:-mt-60 2xl:-mt-64"
+        "mb-24 -mt-44 flex items-center justify-center px-10 sm:px-4 md:-mt-48 lg:-mt-56 lg:px-0 xl:-mt-60 2xl:-mt-64 "
       }
     >
       <div></div>
@@ -60,7 +60,7 @@ export const Metadata = (props: MetaDataProps) => {
 
           <div
             className={
-              "absolute right-0 hidden w-80 animate-blob xl:-mt-10 xl:block"
+              "absolute right-0 hidden  w-80 animate-blob xl:-mt-10 xl:block"
             }
           >
             <Image src={right} alt="full-circle" />
