@@ -17,12 +17,22 @@
 
   .mesh-secondary-gradient {
     background: transparent
-      linear-gradient(
-        132deg,
-        #d7295f 0%,
-        #4d4b6c 39%,
-        #212121 90%
-      )
-      0% 0% no-repeat padding-box;
+      linear-gradient(132deg, #d7295f 0%, #4d4b6c 39%, #212121 90%) 0% 0%
+      no-repeat padding-box;
   }
+}
+
+.meshScroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.meshScroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.meshScroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
 }

@@ -31,7 +31,7 @@ class MyDocument extends Document {
             }}
           />
         </Head>
-        <body className={isDev ? "debug-screens" : ""}>
+        <body className={isDev ? "debug-screens meshScroll overflow-x-hidden" : "meshScroll overflow-x-hidden"}>
           <Main />
           <NextScript />
         </body>
