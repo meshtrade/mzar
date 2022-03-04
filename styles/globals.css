@@ -32,7 +32,7 @@
 }
 
 .meshScroll::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: #55517B;
   outline: 1px solid slategrey;
   border-radius: 4px;
 }
