@@ -20,6 +20,15 @@
       linear-gradient(132deg, #d7295f 0%, #4d4b6c 39%, #212121 90%) 0% 0%
       no-repeat padding-box;
   }
+  .mesh-circle-gradient {
+    background: transparent
+      linear-gradient(
+        180deg,
+        #d7295f 10%,
+        #55517B 70%
+      )
+      0% 0% no-repeat padding-box;
+  }
 }
 
 .meshScroll::-webkit-scrollbar {
