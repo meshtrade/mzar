@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import right from "../images/right-side.png";
+import { AttestationOfReservesCircle } from "./attestation-of-reserves-circle";
 
 export const Transparency = () => {
   return (
     <div id="transparency">
-      <div
-        className={"2xl:py-30 -mt-32  px-8   lg:px-0 lg:py-36 xl:py-40 "}
-      >
+      <div className={"2xl:py-30 -mt-32  px-8 lg:px-0 md:py-36 xl:py-40 "}>
         <h1
           className={
             "flex  justify-center py-8 pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
@@ -30,7 +29,7 @@ export const Transparency = () => {
                 "justify-center pt-4 text-center  font-roboto text-lg font-normal text-text "
               }
             >
-              The value of our reserves is updated and pubished at least once
+              The value of our reserves is updated and published at least once
               per month.
             </p>
           </div>
@@ -50,42 +49,43 @@ export const Transparency = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center my-5 ">
-         
-          <div className="grid content-center w-24 h-24 m-2 text-xl text-center text-white align-middle rounded-full align-t font-extrab old mesh-circle-gradient">
-            <p>
-              <strong>2022</strong>
-            </p>
-            <p className="text-sm uppercase">October</p>
-          </div>
-          <div className="grid content-center w-24 h-24 m-2 text-xl text-center text-white align-middle rounded-full align-t font-extrab old mesh-circle-gradient">
-            <p>
-              <strong>2022</strong>
-            </p>
-            <p className="text-sm uppercase">October</p>
-          </div>
-          <div className="grid content-center w-24 h-24 m-2 text-xl text-center text-white align-middle rounded-full align-t font-extrab old mesh-circle-gradient">
-            <p>
-              <strong>2022</strong>
-            </p>
-            <p className="text-sm uppercase">October</p>
-          </div>
-          <div className="content-center hidden w-24 h-24 m-2 text-xl text-center text-white align-middle rounded-full md:grid align-t font-extrab old mesh-circle-gradient">
-            <p>
-              <strong>2022</strong>
-            </p>
-            <p className="text-sm uppercase">October</p>
-          </div>
-          <div className="content-center hidden w-24 h-24 m-2 text-xl text-center text-white align-middle rounded-full lg:grid align-t font-extrab old mesh-circle-gradient">
-            <p>
-              <strong>2022</strong>
-            </p>
-            <p className="text-sm uppercase">October</p>
-          </div>
-        </div>
+        <div className="flex flex-wrap items-center justify-center my-5 ">
+          <AttestationOfReservesCircle
+            year={2022}
+            month="April"
+            href="assets/to-do-list.pdf"
+          />
 
-        <div className="flex flex-wrap justify-center text-xs text-text">
-          <p>Download reports here.</p>
+          <AttestationOfReservesCircle
+            year={2022}
+            month="March"
+            href="assets/to-do-list.pdf"
+          />
+          <AttestationOfReservesCircle
+            year={2022}
+            month="February"
+            href="assets/to-do-list.pdf"
+          />
+          <AttestationOfReservesCircle
+            year={2022}
+            month="January"
+            href="assets/to-do-list.pdf"
+          />
+          <AttestationOfReservesCircle
+            year={2021}
+            month="December"
+            href="assets/to-do-list.pdf"
+          />
+          <AttestationOfReservesCircle
+            year={2021}
+            month="November"
+            href="assets/to-do-list.pdf"
+          />
+          <AttestationOfReservesCircle
+            year={2021}
+            month="October"
+            href="assets/to-do-list.pdf"
+          />
         </div>
       </div>
     </div>

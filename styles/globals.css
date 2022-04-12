@@ -22,12 +22,8 @@
   }
   .mesh-circle-gradient {
     background: transparent
-      linear-gradient(
-        180deg,
-        #d7295f 10%,
-        #55517B 70%
-      )
-      0% 0% no-repeat padding-box;
+      linear-gradient(180deg, #dc0451 2%, #3d065f 65%, #272445 100%) 0% 0%
+      no-repeat padding-box;
   }
 }
 
@@ -41,7 +37,7 @@
 }
 
 .meshScroll::-webkit-scrollbar-thumb {
-  background-color: #55517B;
+  background-color: #55517b;
   outline: 1px solid slategrey;
   border-radius: 4px;
 }
