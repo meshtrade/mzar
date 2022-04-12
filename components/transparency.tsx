@@ -49,7 +49,7 @@ export const Transparency = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-center ">
+        <div className="flex flex-wrap items-center justify-center gap-4 ">
           <AttestationOfReservesCircle
             year={2022}
             month="April"
