@@ -5,11 +5,11 @@ import { AttestationOfReservesCircle } from "./attestation-of-reserves-circle";
 
 export const Transparency = () => {
   return (
-    <div id="transparency">
-      <div className={"2xl:py-30 -mt-32  px-8 lg:px-0 md:py-36 xl:py-40 "}>
+    <div id="transparency" className="py-20 lg:pt-32">
+      <div className={"  px-8 "}>
         <h1
           className={
-            "flex  justify-center py-8 pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
+            "flex  justify-center pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
           }
         >
           Transparency
