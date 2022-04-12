@@ -9,7 +9,7 @@ export const Transparency = () => {
       <div className={"  px-8 "}>
         <h1
           className={
-            "flex  justify-center pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
+            "flex  justify-center pb-8 text-4xl font-bold tracking-wide text-primary lg:justify-center"
           }
         >
           Transparency
@@ -39,7 +39,7 @@ export const Transparency = () => {
         <div>
           <div
             className={
-              " flex justify-center pt-10 pb-2 font-light text-primary "
+              " flex justify-center py-8 font-light text-primary "
             }
           >
             <p>
@@ -49,7 +49,7 @@ export const Transparency = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-center my-5 ">
+        <div className="flex flex-wrap items-center justify-center ">
           <AttestationOfReservesCircle
             year={2022}
             month="April"
