@@ -8,7 +8,7 @@ export const About = () => {
     <div id="about" className={"mt-28 lg:mt-32"}>
       <div
         className={
-          "w-60 animate-blob pt-14 sm:w-[350px] md:w-[380px] lg:absolute  lg:w-[450px] 2xl:w-[600px]  4xl:w-[700px] 5xl:w-[800px] "
+          "w-60 animate-blob pt-14 md:-ml-0 -ml-5 sm:w-[350px] md:w-[380px] lg:absolute  lg:w-[450px] 2xl:w-[600px]  4xl:w-[700px] 5xl:w-[800px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
