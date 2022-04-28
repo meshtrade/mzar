@@ -15,6 +15,7 @@ export const AttestationOfReservesCircle = (props: Props) => {
     <a
       href={props.href}
       target={"_blank"}
+      rel="noopener noreferrer"
       ref={hoverRef}
       className={"relative"}
     >
