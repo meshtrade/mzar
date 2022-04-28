@@ -39,6 +39,7 @@ module.exports = {
         'secondary' : "#30B0B0",
         'text' : "#55517B"
       }
+      
     },
   },
   plugins: [

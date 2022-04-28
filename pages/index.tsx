@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { About } from "../components/about";
-import { Hero } from "../components/hero";
 import { Navbar } from "../components/nav-bar";
+import { About } from "../components/about";
+import { Transparency } from "../components/transparency";
+
+import { Hero } from "../components/hero";
 import Footer from "../components/footer";
 import Metadata from "../components/metadata";
 import { useEffect, useRef, useState } from "react";
@@ -50,6 +52,7 @@ const Home: NextPage = () => {
           orgDocumentation={toml?.DOCUMENTATION}
           issuerAddress={toml?.ACCOUNTS[0]}
         />
+        <Transparency></Transparency>
         <Footer />
       </main>
     </div>

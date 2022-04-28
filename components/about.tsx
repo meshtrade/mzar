@@ -5,31 +5,27 @@ import design from "../images/left-design.png";
 
 export const About = () => {
   return (
-    <div id="about" className={"my-32 pb-20"}>
+    <div id="about" className={"mt-28 lg:mt-32"}>
       <div
         className={
-          "  -ml-10 w-60 animate-blob pt-12 sm:w-[390px]  sm:pt-20 md:w-[380px] lg:absolute  lg:w-[500px] lg:pt-44 2xl:w-[550px]  4xl:w-[700px] 5xl:w-[800px] "
+          "-ml-5 w-60 animate-blob pt-14 sm:w-[350px] md:-ml-0 md:w-[380px] lg:absolute  lg:w-[450px] 2xl:w-[600px]  4xl:w-[700px] 5xl:w-[800px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
       </div>
-      <div
-        className={
-          "2xl:py-30 -mt-32  px-8 md:-mt-36  md:px-20 lg:px-0 lg:py-32 xl:py-40 "
-        }
-      >
+      <div className={"px-8"}>
         <h1
           className={
-            "flex  justify-center py-8 pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
+            "flex  justify-center pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
           }
         >
           About
         </h1>
 
-        <div className={"flex justify-center lg:justify-center"}>
+        <div className={"flex justify-center pb-5 lg:justify-center"}>
           <div
             className={
-              " flex justify-center pb-8 text-2xl font-light text-primary   lg:justify-center"
+              " flex justify-center pb-8 text-2xl font-light text-primary lg:justify-center"
             }
           >
             <p>
@@ -58,15 +54,23 @@ export const About = () => {
               mZAR is a fully collaterized South African ZAR stablecoin, based
               on the open fiat stablecoin framework of Mesh. mZAR is fully
               reedemable for ZAR held in an account managed by Mesh.
-              <h2 className={"py-4 font-poppins text-lg font-semibold"}>
-                1 mZAR equals 1 ZAR. At all times
-              </h2>
             </p>
+            <h2 className={"py-2 font-poppins text-lg font-semibold text-text"}>
+              1 mZAR equals 1 ZAR. At all times
+            </h2>
+            <a
+              href="assets/sample-report.pdf"
+              target={"_blank"}
+              rel="noopener noreferrer"
+              className="text-lg underline pointer text-secondary"
+            >
+              Access the mZAR whitepaper here
+            </a>
           </div>
         </div>
         <div
           className={
-            "visible flex animate-blob items-center justify-center py-8 md:flex lg:hidden "
+            "visible flex animate-blob items-center justify-center pt-10 md:flex lg:hidden "
           }
         >
           <Image
