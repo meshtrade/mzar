@@ -8,16 +8,12 @@ export const About = () => {
     <div id="about" className={"mt-28 lg:mt-32"}>
       <div
         className={
-          "w-60 animate-blob pt-14 md:-ml-0 -ml-5 sm:w-[350px] md:w-[380px] lg:absolute  lg:w-[450px] 2xl:w-[600px]  4xl:w-[700px] 5xl:w-[800px] "
+          "-ml-5 w-60 animate-blob pt-14 sm:w-[350px] md:-ml-0 md:w-[380px] lg:absolute  lg:w-[450px] 2xl:w-[600px]  4xl:w-[700px] 5xl:w-[800px] "
         }
       >
         <Image src={design} className="" alt="Mesh-loop" />
       </div>
-      <div
-        className={
-          "px-8"
-        }
-      >
+      <div className={"px-8"}>
         <h1
           className={
             "flex  justify-center pb-4 text-4xl font-bold tracking-wide text-primary lg:justify-center"
@@ -58,12 +54,18 @@ export const About = () => {
               mZAR is a fully collaterized South African ZAR stablecoin, based
               on the open fiat stablecoin framework of Mesh. mZAR is fully
               reedemable for ZAR held in an account managed by Mesh.
-              
             </p>
-            <h2 className={"font-poppins text-lg py-2 font-semibold text-text"}>
-                1 mZAR equals 1 ZAR. At all times
-              </h2>
-              <a href="#" className="text-lg underline text-secondary pointer">Access the mZAR whitepaper here</a>
+            <h2 className={"py-2 font-poppins text-lg font-semibold text-text"}>
+              1 mZAR equals 1 ZAR. At all times
+            </h2>
+            <a
+              href="assets/sample-report.pdf"
+              target={"_blank"}
+              rel="noopener noreferrer"
+              className="text-lg underline pointer text-secondary"
+            >
+              Access the mZAR whitepaper here
+            </a>
           </div>
         </div>
         <div
