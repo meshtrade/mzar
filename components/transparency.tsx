@@ -22,7 +22,7 @@ export const Transparency = () => {
               }
             >
               All Mesh assets are pegged at 1-to-1 with a matching fiat currency
-              and are backed 100% by Mesh's reserves.
+              and are backed 100% by Mesh&apos;s reserves.
             </p>
             <p
               className={
