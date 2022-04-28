@@ -53,38 +53,38 @@ export const Transparency = () => {
           <AttestationOfReservesCircle
             year={2022}
             month="April"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
 
           <AttestationOfReservesCircle
             year={2022}
             month="March"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
           <AttestationOfReservesCircle
             year={2022}
             month="February"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
           <AttestationOfReservesCircle
             year={2022}
             month="January"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
           <AttestationOfReservesCircle
             year={2021}
             month="December"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
           <AttestationOfReservesCircle
             year={2021}
             month="November"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
           <AttestationOfReservesCircle
             year={2021}
             month="October"
-            href="assets/to-do-list.pdf"
+            href="assets/sample-report.pdf"
           />
         </div>
       </div>
