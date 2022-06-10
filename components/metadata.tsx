@@ -16,7 +16,7 @@ export const Metadata = (props: MetaDataProps) => {
     <div
       id="asset-metadata"
       className={
-        "mt-20 lg:mt-28  flex items-center justify-center px-10 sm:px-4 "
+        "mt-20 mb-40 lg:mt-28  flex items-center justify-center px-10 sm:px-4 "
       }
     >
       <div></div>

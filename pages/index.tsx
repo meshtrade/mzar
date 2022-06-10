@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           orgDocumentation={toml?.DOCUMENTATION}
           issuerAddress={toml?.ACCOUNTS[0]}
         />
-        <Transparency></Transparency>
+        {/* <Transparency></Transparency> */}
         <Footer />
       </main>
     </div>
