@@ -89,14 +89,14 @@ export const Navbar = (props: NavbarProps) => {
                     Buy mZAR Now
                   </a>
                 </Menu.Item>
-                <Menu.Item>
+                {/* <Menu.Item>
                   <a
                     className={"hover:text-primary"}
                     href="#transparency"
                   >
                     Transparency
                   </a>
-                </Menu.Item>
+                </Menu.Item> */}
               </Menu.Items>
             )}
           </div>
