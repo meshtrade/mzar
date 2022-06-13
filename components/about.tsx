@@ -59,7 +59,7 @@ export const About = () => {
               1 mZAR equals 1 ZAR. At all times
             </h2>
             <a
-              href="assets/FIN-mZAR Whitepaper.pdf"
+              href="assets/mZAR-whitepaper.pdf"
               target={"_blank"}
               rel="noopener noreferrer"
               className="text-lg underline pointer text-secondary"
