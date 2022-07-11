@@ -53,7 +53,6 @@ export const Transparency = () => {
             month="May"
             href="assets/mesh-trade-south-africa-reserve-acc-report-31-may-22.pdf"
           />
-          {/* Connie to send June PDF on Tuesday, 12 Jul 2022.*/}
 
           {/* <AttestationOfReservesCircle
             year={2022}
