@@ -5,7 +5,7 @@ import { AttestationOfReservesCircle } from "./attestation-of-reserves-circle";
 
 export const Transparency = () => {
   return (
-    <div id="transparency" className="py-20 lg:pt-32">
+    <div id="transparency" className="py-20 lg:pt-40 lg:pb-20">
       <div className={"  px-8 "}>
         <h1
           className={
@@ -37,11 +37,7 @@ export const Transparency = () => {
 
         {/* Attestation of Reserves section */}
         <div>
-          <div
-            className={
-              " flex justify-center py-8 font-light text-primary "
-            }
-          >
+          <div className={" flex justify-center py-8 font-light text-primary "}>
             <p>
               <strong className="text-xl font-bold">
                 Attestation of Reserves
@@ -49,43 +45,20 @@ export const Transparency = () => {
             </p>
           </div>
         </div>
+
+        {/* Attestation Reports PDFS */}
         <div className="flex flex-wrap items-center justify-center gap-4 ">
           <AttestationOfReservesCircle
             year={2022}
-            month="April"
-            href="assets/sample-report.pdf"
+            month="May"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-may-22.pdf"
           />
 
-          <AttestationOfReservesCircle
+          {/* <AttestationOfReservesCircle
             year={2022}
-            month="March"
+            month="June"
             href="assets/sample-report.pdf"
-          />
-          <AttestationOfReservesCircle
-            year={2022}
-            month="February"
-            href="assets/sample-report.pdf"
-          />
-          <AttestationOfReservesCircle
-            year={2022}
-            month="January"
-            href="assets/sample-report.pdf"
-          />
-          <AttestationOfReservesCircle
-            year={2021}
-            month="December"
-            href="assets/sample-report.pdf"
-          />
-          <AttestationOfReservesCircle
-            year={2021}
-            month="November"
-            href="assets/sample-report.pdf"
-          />
-          <AttestationOfReservesCircle
-            year={2021}
-            month="October"
-            href="assets/sample-report.pdf"
-          />
+          /> */}
         </div>
       </div>
     </div>
