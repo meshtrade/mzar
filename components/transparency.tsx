@@ -48,7 +48,13 @@ export const Transparency = () => {
 
         {/* Attestation Reports PDFS */}
         <div className="flex flex-wrap items-center justify-center gap-4 ">
-       
+        <AttestationOfReservesCircle
+            year={2023}
+            month="January"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-30-jan-23.pdf"
+          />
+
+
         <AttestationOfReservesCircle
             year={2022}
             month="December"
