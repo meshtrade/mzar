@@ -48,7 +48,31 @@ export const Transparency = () => {
 
         {/* Attestation Reports PDFS */}
         <div className="flex flex-wrap items-center justify-center gap-4 ">
-         
+       
+        <AttestationOfReservesCircle
+            year={2023}
+            month="October"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-oct-23.pdf"
+          />
+
+        <AttestationOfReservesCircle
+            year={2023}
+            month="September"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-30-sep-23.pdf"
+          />
+
+        <AttestationOfReservesCircle
+            year={2023}
+            month="August"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-aug-23.pdf"
+          />
+       
+        <AttestationOfReservesCircle
+            year={2023}
+            month="July"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-jul-23.pdf"
+          />
+
           <AttestationOfReservesCircle
             year={2023}
             month="June"
