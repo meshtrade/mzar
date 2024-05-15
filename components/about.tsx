@@ -51,9 +51,9 @@ export const About = () => {
             <p
               className={"py-2 pt-4 font-roboto text-lg font-normal text-text "}
             >
-              mZAR is a fully collaterized South African ZAR stablecoin, based
+              mZAR is a fully collateralised South African ZAR stablecoin, based
               on the open fiat stablecoin framework of Mesh. mZAR is fully
-              reedemable for ZAR held in an account managed by Mesh.
+              redeemable for ZAR held in an account managed by Mesh.
             </p>
             <h2 className={"py-2 font-poppins text-lg font-semibold text-text"}>
               1 mZAR equals 1 ZAR. At all times
