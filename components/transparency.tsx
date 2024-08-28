@@ -47,7 +47,13 @@ export const Transparency = () => {
         </div>
 
         {/* Attestation Reports PDFS */}
-        <div className="flex flex-wrap items-center justify-center gap-4 ">
+        <div className="flex flex-wrap items-center justify-center gap-4 ">  
+        <AttestationOfReservesCircle
+            year={2024}
+            month="July"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-jul-24.pdf"
+          />
+
         <AttestationOfReservesCircle
             year={2024}
             month="May"
