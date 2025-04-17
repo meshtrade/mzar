@@ -6,7 +6,7 @@ import { AttestationOfReservesCircle } from "./attestation-of-reserves-circle";
 export const Transparency = () => {
   return (
     <div id="transparency" className="py-20 lg:pt-40 lg:pb-20">
-      <div className={"  px-8 "}>
+      <div className={"px-8 "}>
         <h1
           className={
             "flex  justify-center pb-8 text-4xl font-bold tracking-wide text-primary lg:justify-center"
@@ -48,6 +48,30 @@ export const Transparency = () => {
 
         {/* Attestation Reports PDFS */}
         <div className="flex flex-wrap items-center justify-center gap-4 ">  
+        <AttestationOfReservesCircle
+            year={2024}
+            month="December"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-dec-24.pdf"
+          />
+          
+        <AttestationOfReservesCircle
+            year={2024}
+            month="November"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-30-nov-24.pdf"
+          />
+
+        <AttestationOfReservesCircle
+            year={2024}
+            month="October"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-oct-24.pdf"
+          />
+
+        <AttestationOfReservesCircle
+            year={2024}
+            month="September"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-30-sep-24.pdf"
+          />
+
         <AttestationOfReservesCircle
             year={2024}
             month="August"
