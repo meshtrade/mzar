@@ -5,8 +5,9 @@ class MyDocument extends Document {
   render() {
     const isDev = process?.env.NODE_ENV === "development";
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          <link rel="alternate" href="https://mzar.mesh.trade/" hrefLang="en" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
