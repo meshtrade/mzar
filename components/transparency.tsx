@@ -73,6 +73,12 @@ export const Transparency = () => {
             href="assets/mesh-trade-south-africa-reserve-acc-report-30-apr-25.pdf"
           />
 
+           <AttestationOfReservesCircle
+            year={2025}
+            month="March"
+            href="assets/mesh-trade-south-africa-reserve-acc-report-31-mar-25.pdf"
+          />
+
 
         <AttestationOfReservesCircle
             year={2025}
